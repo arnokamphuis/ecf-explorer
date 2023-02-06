@@ -1,0 +1,938 @@
+{
+    "1": {
+        "developed": [],
+        "in development": [
+            {
+                "name": "database administrator",
+                "developed": [],
+                "in development": [
+                    "B.1. Application Development"
+                ]
+            },
+            {
+                "name": "data specialist",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design"
+                ]
+            },
+            {
+                "name": "developer",
+                "developed": [],
+                "in development": [
+                    "B.1. Application Development",
+                    "B.3. Testing",
+                    "B.5. Documentation Production"
+                ]
+            },
+            {
+                "name": "devops expert",
+                "developed": [],
+                "in development": [
+                    "B.1. Application Development",
+                    "B.3. Testing",
+                    "B.4. Solution Deployment"
+                ]
+            },
+            {
+                "name": "digital media specialist",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design",
+                    "B.1. Application Development",
+                    "B.3. Testing",
+                    "B.4. Solution Deployment"
+                ]
+            },
+            {
+                "name": "network specialist",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design",
+                    "B.4. Solution Deployment"
+                ]
+            },
+            {
+                "name": "scrum master",
+                "developed": [],
+                "in development": [
+                    "B.3. Testing"
+                ]
+            },
+            {
+                "name": "service manager",
+                "developed": [],
+                "in development": [
+                    "C.3. Service Delivery"
+                ]
+            },
+            {
+                "name": "service support",
+                "developed": [
+                    "C.3. Service Delivery"
+                ],
+                "in development": [
+                    "C.1. User Support"
+                ]
+            },
+            {
+                "name": "solution designer",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design"
+                ]
+            },
+            {
+                "name": "systems adminstrator",
+                "developed": [],
+                "in development": [
+                    "B.3. Testing"
+                ]
+            },
+            {
+                "name": "systems analyst",
+                "developed": [],
+                "in development": [
+                    "B.5. Documentation Production"
+                ]
+            },
+            {
+                "name": "technical specialist",
+                "developed": [],
+                "in development": [
+                    "C.3. Service Delivery"
+                ]
+            },
+            {
+                "name": "test specialist",
+                "developed": [],
+                "in development": [
+                    "B.3. Testing",
+                    "B.4. Solution Deployment",
+                    "B.5. Documentation Production"
+                ]
+            }
+        ]
+    },
+    "2": {
+        "developed": [
+            {
+                "name": "service support",
+                "developed": [
+                    "C.1. User Support",
+                    "C.2. Change Support",
+                    "C.3. Service Delivery",
+                    "C.4. Problem Management"
+                ],
+                "in development": []
+            }
+        ],
+        "in development": [
+            {
+                "name": "account manager",
+                "developed": [],
+                "in development": [
+                    "D.5. Sales Development",
+                    "D.6. Digital Marketing",
+                    "D.7. Data Science and Analytics"
+                ]
+            },
+            {
+                "name": "chief information officer",
+                "developed": [],
+                "in development": [
+                    "E.2. Project and Portfolio Management"
+                ]
+            },
+            {
+                "name": "database administrator",
+                "developed": [],
+                "in development": [
+                    "B.1. Application Development",
+                    "B.2. Component Integration",
+                    "C.2. Change Support",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "data specialist",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design",
+                    "E.6. ICT Quality Management",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "developer",
+                "developed": [
+                    "B.2. Component Integration",
+                    "B.3. Testing"
+                ],
+                "in development": [
+                    "B.1. Application Development",
+                    "B.5. Documentation Production",
+                    "C.4. Problem Management"
+                ]
+            },
+            {
+                "name": "devops expert",
+                "developed": [],
+                "in development": [
+                    "B.1. Application Development",
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "B.4. Solution Deployment",
+                    "C.2. Change Support"
+                ]
+            },
+            {
+                "name": "digital media specialist",
+                "developed": [
+                    "A.6. Application Design",
+                    "B.3. Testing",
+                    "D.6. Digital Marketing"
+                ],
+                "in development": [
+                    "B.1. Application Development",
+                    "B.4. Solution Deployment"
+                ]
+            },
+            {
+                "name": "enterprise architect",
+                "developed": [],
+                "in development": [
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "ict operations manager",
+                "developed": [],
+                "in development": [
+                    "D.9. Personnel Development",
+                    "E.2. Project and Portfolio Management",
+                    "E.3. Risk Management",
+                    "E.6. ICT Quality Management",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "information security manager",
+                "developed": [],
+                "in development": [
+                    "E.3. Risk Management",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "information security specialist",
+                "developed": [],
+                "in development": [
+                    "D.3. Education and Training Provision",
+                    "E.3. Risk Management"
+                ]
+            },
+            {
+                "name": "network specialist",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design",
+                    "B.2. Component Integration",
+                    "B.4. Solution Deployment",
+                    "C.4. Problem Management",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "product owner",
+                "developed": [],
+                "in development": [
+                    "A.4. Product or Service Planning"
+                ]
+            },
+            {
+                "name": "project manager",
+                "developed": [],
+                "in development": [
+                    "A.4. Product or Service Planning",
+                    "E.2. Project and Portfolio Management",
+                    "E.3. Risk Management"
+                ]
+            },
+            {
+                "name": "quality assurance manager",
+                "developed": [],
+                "in development": [
+                    "E.3. Risk Management",
+                    "E.6. ICT Quality Management"
+                ]
+            },
+            {
+                "name": "scrum master",
+                "developed": [],
+                "in development": [
+                    "B.3. Testing",
+                    "D.9. Personnel Development"
+                ]
+            },
+            {
+                "name": "service manager",
+                "developed": [],
+                "in development": [
+                    "C.3. Service Delivery",
+                    "C.4. Problem Management",
+                    "D.8. Contract Management",
+                    "D.9. Personnel Development"
+                ]
+            },
+            {
+                "name": "solution designer",
+                "developed": [],
+                "in development": [
+                    "A.6. Application Design"
+                ]
+            },
+            {
+                "name": "systems adminstrator",
+                "developed": [
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "E.8. Information Security Management"
+                ],
+                "in development": [
+                    "C.2. Change Support",
+                    "C.4. Problem Management"
+                ]
+            },
+            {
+                "name": "systems analyst",
+                "developed": [],
+                "in development": [
+                    "B.5. Documentation Production",
+                    "E.6. ICT Quality Management"
+                ]
+            },
+            {
+                "name": "systems architect",
+                "developed": [],
+                "in development": [
+                    "B.2. Component Integration"
+                ]
+            },
+            {
+                "name": "technical specialist",
+                "developed": [
+                    "C.2. Change Support",
+                    "C.3. Service Delivery",
+                    "E.3. Risk Management",
+                    "E.6. ICT Quality Management"
+                ],
+                "in development": [
+                    "C.4. Problem Management"
+                ]
+            },
+            {
+                "name": "test specialist",
+                "developed": [
+                    "B.4. Solution Deployment",
+                    "E.3. Risk Management"
+                ],
+                "in development": [
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "B.5. Documentation Production"
+                ]
+            }
+        ]
+    },
+    "3": {
+        "developed": [
+            {
+                "name": "database administrator",
+                "developed": [
+                    "B.1. Application Development",
+                    "B.2. Component Integration",
+                    "C.2. Change Support",
+                    "D.10. Information and Knowledge Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "developer",
+                "developed": [
+                    "B.1. Application Development",
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "B.5. Documentation Production",
+                    "C.4. Problem Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "digital media specialist",
+                "developed": [
+                    "A.6. Application Design",
+                    "B.1. Application Development",
+                    "B.3. Testing",
+                    "B.4. Solution Deployment",
+                    "D.6. Digital Marketing"
+                ],
+                "in development": []
+            },
+            {
+                "name": "network specialist",
+                "developed": [
+                    "A.6. Application Design",
+                    "B.2. Component Integration",
+                    "B.4. Solution Deployment",
+                    "C.4. Problem Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "systems adminstrator",
+                "developed": [
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "C.2. Change Support",
+                    "C.4. Problem Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "technical specialist",
+                "developed": [
+                    "C.2. Change Support",
+                    "C.3. Service Delivery",
+                    "C.4. Problem Management",
+                    "E.3. Risk Management",
+                    "E.6. ICT Quality Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "test specialist",
+                "developed": [
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "B.4. Solution Deployment",
+                    "B.5. Documentation Production",
+                    "E.3. Risk Management"
+                ],
+                "in development": []
+            }
+        ],
+        "in development": [
+            {
+                "name": "account manager",
+                "developed": [
+                    "D.5. Sales Development",
+                    "E.1. Forecast Development"
+                ],
+                "in development": [
+                    "D.6. Digital Marketing",
+                    "D.7. Data Science and Analytics",
+                    "E.4. Relationship Management"
+                ]
+            },
+            {
+                "name": "business analyst",
+                "developed": [],
+                "in development": [
+                    "A.3. Business Plan Development",
+                    "D.10. Information and Knowledge Management",
+                    "D.11. Needs Identification",
+                    "E.5. Process Improvement"
+                ]
+            },
+            {
+                "name": "business information manager",
+                "developed": [],
+                "in development": [
+                    "A.3. Business Plan Development",
+                    "E.4. Relationship Management",
+                    "E.7. Business Change Management"
+                ]
+            },
+            {
+                "name": "chief information officer",
+                "developed": [],
+                "in development": [
+                    "A.3. Business Plan Development",
+                    "E.2. Project and Portfolio Management",
+                    "E.4. Relationship Management"
+                ]
+            },
+            {
+                "name": "data scientist",
+                "developed": [],
+                "in development": [
+                    "A.7. Technology Trend Monitoring",
+                    "D.10. Information and Knowledge Management",
+                    "D.11. Needs Identification",
+                    "E.1. Forecast Development"
+                ]
+            },
+            {
+                "name": "data specialist",
+                "developed": [
+                    "A.6. Application Design"
+                ],
+                "in development": [
+                    "D.10. Information and Knowledge Management",
+                    "E.6. ICT Quality Management",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "devops expert",
+                "developed": [
+                    "B.1. Application Development",
+                    "B.4. Solution Deployment",
+                    "C.2. Change Support"
+                ],
+                "in development": [
+                    "B.2. Component Integration",
+                    "B.3. Testing"
+                ]
+            },
+            {
+                "name": "digital transformation leader",
+                "developed": [],
+                "in development": [
+                    "A.3. Business Plan Development",
+                    "A.5. Architecture Design",
+                    "E.7. Business Change Management"
+                ]
+            },
+            {
+                "name": "enterprise architect",
+                "developed": [
+                    "E.8. Information Security Management"
+                ],
+                "in development": [
+                    "A.3. Business Plan Development",
+                    "A.5. Architecture Design",
+                    "A.7. Technology Trend Monitoring"
+                ]
+            },
+            {
+                "name": "ict operations manager",
+                "developed": [
+                    "E.3. Risk Management",
+                    "E.6. ICT Quality Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": [
+                    "D.9. Personnel Development",
+                    "E.2. Project and Portfolio Management"
+                ]
+            },
+            {
+                "name": "information security manager",
+                "developed": [],
+                "in development": [
+                    "A.7. Technology Trend Monitoring",
+                    "E.3. Risk Management",
+                    "E.8. Information Security Management"
+                ]
+            },
+            {
+                "name": "information security specialist",
+                "developed": [
+                    "D.3. Education and Training Provision",
+                    "E.3. Risk Management"
+                ],
+                "in development": [
+                    "A.7. Technology Trend Monitoring"
+                ]
+            },
+            {
+                "name": "product owner",
+                "developed": [],
+                "in development": [
+                    "A.4. Product or Service Planning",
+                    "D.11. Needs Identification",
+                    "E.4. Relationship Management"
+                ]
+            },
+            {
+                "name": "project manager",
+                "developed": [
+                    "E.3. Risk Management",
+                    "E.4. Relationship Management",
+                    "E.7. Business Change Management"
+                ],
+                "in development": [
+                    "A.4. Product or Service Planning",
+                    "E.2. Project and Portfolio Management"
+                ]
+            },
+            {
+                "name": "quality assurance manager",
+                "developed": [
+                    "E.3. Risk Management"
+                ],
+                "in development": [
+                    "E.5. Process Improvement",
+                    "E.6. ICT Quality Management"
+                ]
+            },
+            {
+                "name": "scrum master",
+                "developed": [
+                    "B.3. Testing",
+                    "D.9. Personnel Development",
+                    "E.4. Relationship Management",
+                    "E.5. Process Improvement"
+                ],
+                "in development": [
+                    "B.6. ICT Systems Engineering"
+                ]
+            },
+            {
+                "name": "service manager",
+                "developed": [
+                    "C.3. Service Delivery",
+                    "D.8. Contract Management",
+                    "D.9. Personnel Development"
+                ],
+                "in development": [
+                    "A.2. Service Level Management",
+                    "C.4. Problem Management"
+                ]
+            },
+            {
+                "name": "solution designer",
+                "developed": [
+                    "A.6. Application Design",
+                    "D.10. Information and Knowledge Management"
+                ],
+                "in development": [
+                    "D.11. Needs Identification"
+                ]
+            },
+            {
+                "name": "systems analyst",
+                "developed": [
+                    "A.5. Architecture Design",
+                    "B.5. Documentation Production",
+                    "E.6. ICT Quality Management"
+                ],
+                "in development": [
+                    "B.6. ICT Systems Engineering"
+                ]
+            },
+            {
+                "name": "systems architect",
+                "developed": [],
+                "in development": [
+                    "A.5. Architecture Design",
+                    "A.7. Technology Trend Monitoring",
+                    "B.2. Component Integration",
+                    "B.6. ICT Systems Engineering"
+                ]
+            }
+        ]
+    },
+    "4": {
+        "developed": [
+            {
+                "name": "account manager",
+                "developed": [
+                    "D.5. Sales Development",
+                    "D.6. Digital Marketing",
+                    "D.7. Data Science and Analytics",
+                    "E.1. Forecast Development",
+                    "E.4. Relationship Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "business analyst",
+                "developed": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.3. Business Plan Development",
+                    "D.10. Information and Knowledge Management",
+                    "D.11. Needs Identification",
+                    "E.5. Process Improvement"
+                ],
+                "in development": []
+            },
+            {
+                "name": "data specialist",
+                "developed": [
+                    "A.6. Application Design",
+                    "D.10. Information and Knowledge Management",
+                    "E.6. ICT Quality Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "devops expert",
+                "developed": [
+                    "B.1. Application Development",
+                    "B.2. Component Integration",
+                    "B.3. Testing",
+                    "B.4. Solution Deployment",
+                    "C.2. Change Support"
+                ],
+                "in development": []
+            },
+            {
+                "name": "ict operations manager",
+                "developed": [
+                    "D.9. Personnel Development",
+                    "E.2. Project and Portfolio Management",
+                    "E.3. Risk Management",
+                    "E.6. ICT Quality Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "information security specialist",
+                "developed": [
+                    "A.7. Technology Trend Monitoring",
+                    "A.9. Innovating",
+                    "D.1. Information Security Strategy Development",
+                    "D.3. Education and Training Provision",
+                    "E.3. Risk Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "product owner",
+                "developed": [
+                    "A.4. Product or Service Planning",
+                    "A.9. Innovating",
+                    "D.11. Needs Identification",
+                    "E.4. Relationship Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "project manager",
+                "developed": [
+                    "A.4. Product or Service Planning",
+                    "E.2. Project and Portfolio Management",
+                    "E.3. Risk Management",
+                    "E.4. Relationship Management",
+                    "E.7. Business Change Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "quality assurance manager",
+                "developed": [
+                    "D.2. ICT Quality Strategy Development",
+                    "E.3. Risk Management",
+                    "E.5. Process Improvement",
+                    "E.6. ICT Quality Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "scrum master",
+                "developed": [
+                    "B.3. Testing",
+                    "B.6. ICT Systems Engineering",
+                    "D.9. Personnel Development",
+                    "E.4. Relationship Management",
+                    "E.5. Process Improvement"
+                ],
+                "in development": []
+            },
+            {
+                "name": "service manager",
+                "developed": [
+                    "A.2. Service Level Management",
+                    "C.3. Service Delivery",
+                    "C.4. Problem Management",
+                    "D.8. Contract Management",
+                    "D.9. Personnel Development"
+                ],
+                "in development": []
+            },
+            {
+                "name": "solution designer",
+                "developed": [
+                    "A.6. Application Design",
+                    "A.9. Innovating",
+                    "D.10. Information and Knowledge Management",
+                    "D.11. Needs Identification"
+                ],
+                "in development": []
+            },
+            {
+                "name": "systems analyst",
+                "developed": [
+                    "A.5. Architecture Design",
+                    "B.5. Documentation Production",
+                    "B.6. ICT Systems Engineering",
+                    "E.6. ICT Quality Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "systems architect",
+                "developed": [
+                    "A.5. Architecture Design",
+                    "A.7. Technology Trend Monitoring",
+                    "A.9. Innovating",
+                    "B.2. Component Integration",
+                    "B.6. ICT Systems Engineering"
+                ],
+                "in development": []
+            }
+        ],
+        "in development": [
+            {
+                "name": "business information manager",
+                "developed": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.3. Business Plan Development",
+                    "E.4. Relationship Management",
+                    "E.7. Business Change Management"
+                ],
+                "in development": [
+                    "E.9. Information Systems Governance"
+                ]
+            },
+            {
+                "name": "chief information officer",
+                "developed": [
+                    "E.4. Relationship Management"
+                ],
+                "in development": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.3. Business Plan Development",
+                    "E.2. Project and Portfolio Management",
+                    "E.9. Information Systems Governance"
+                ]
+            },
+            {
+                "name": "data scientist",
+                "developed": [
+                    "A.9. Innovating",
+                    "D.11. Needs Identification",
+                    "E.1. Forecast Development"
+                ],
+                "in development": [
+                    "A.7. Technology Trend Monitoring",
+                    "D.10. Information and Knowledge Management"
+                ]
+            },
+            {
+                "name": "digital transformation leader",
+                "developed": [],
+                "in development": [
+                    "A.3. Business Plan Development",
+                    "A.5. Architecture Design",
+                    "A.9. Innovating",
+                    "E.7. Business Change Management",
+                    "E.9. Information Systems Governance"
+                ]
+            },
+            {
+                "name": "enterprise architect",
+                "developed": [
+                    "A.3. Business Plan Development",
+                    "A.5. Architecture Design",
+                    "E.8. Information Security Management"
+                ],
+                "in development": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.7. Technology Trend Monitoring"
+                ]
+            },
+            {
+                "name": "information security manager",
+                "developed": [
+                    "A.7. Technology Trend Monitoring",
+                    "E.3. Risk Management",
+                    "E.8. Information Security Management"
+                ],
+                "in development": [
+                    "D.1. Information Security Strategy Development",
+                    "E.9. Information Systems Governance"
+                ]
+            }
+        ]
+    },
+    "5": {
+        "developed": [
+            {
+                "name": "business information manager",
+                "developed": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.3. Business Plan Development",
+                    "E.4. Relationship Management",
+                    "E.7. Business Change Management",
+                    "E.9. Information Systems Governance"
+                ],
+                "in development": []
+            },
+            {
+                "name": "chief information officer",
+                "developed": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.3. Business Plan Development",
+                    "E.2. Project and Portfolio Management",
+                    "E.4. Relationship Management",
+                    "E.9. Information Systems Governance"
+                ],
+                "in development": []
+            },
+            {
+                "name": "data scientist",
+                "developed": [
+                    "A.7. Technology Trend Monitoring",
+                    "A.9. Innovating",
+                    "D.10. Information and Knowledge Management",
+                    "D.11. Needs Identification",
+                    "E.1. Forecast Development"
+                ],
+                "in development": []
+            },
+            {
+                "name": "digital transformation leader",
+                "developed": [
+                    "A.3. Business Plan Development",
+                    "A.5. Architecture Design",
+                    "A.9. Innovating",
+                    "E.7. Business Change Management",
+                    "E.9. Information Systems Governance"
+                ],
+                "in development": []
+            },
+            {
+                "name": "enterprise architect",
+                "developed": [
+                    "A.1. IS and Business Strategy Alignment",
+                    "A.3. Business Plan Development",
+                    "A.5. Architecture Design",
+                    "A.7. Technology Trend Monitoring",
+                    "E.8. Information Security Management"
+                ],
+                "in development": []
+            },
+            {
+                "name": "information security manager",
+                "developed": [
+                    "A.7. Technology Trend Monitoring",
+                    "D.1. Information Security Strategy Development",
+                    "E.3. Risk Management",
+                    "E.8. Information Security Management",
+                    "E.9. Information Systems Governance"
+                ],
+                "in development": []
+            }
+        ],
+        "in development": []
+    }
+}

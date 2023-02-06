@@ -1,0 +1,660 @@
+{
+    "sale": {
+        "accountable": [
+            "account manager"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "business relationship": {
+        "accountable": [],
+        "responsible": [
+            "account manager",
+            "business analyst",
+            "product owner"
+        ],
+        "contributor": []
+    },
+    "sales forecast": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "account manager"
+        ]
+    },
+    "technical proposal": {
+        "accountable": [],
+        "responsible": [
+            "systems analyst"
+        ],
+        "contributor": [
+            "account manager",
+            "service manager"
+        ]
+    },
+    "production forecast": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "account manager"
+        ]
+    },
+    "business requirements": {
+        "accountable": [
+            "business analyst"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "business case": {
+        "accountable": [],
+        "responsible": [
+            "business analyst"
+        ],
+        "contributor": []
+    },
+    "data model": {
+        "accountable": [],
+        "responsible": [
+            "business analyst",
+            "data specialist"
+        ],
+        "contributor": []
+    },
+    "business plan": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "business analyst",
+            "business information manager",
+            "enterprise architect"
+        ]
+    },
+    "ict strategy and implementation": {
+        "accountable": [
+            "chief information officer"
+        ],
+        "responsible": [],
+        "contributor": [
+            "business analyst"
+        ]
+    },
+    "project portfolio": {
+        "accountable": [
+            "business information manager"
+        ],
+        "responsible": [
+            "chief information officer"
+        ],
+        "contributor": [
+            "solution designer"
+        ]
+    },
+    "solution specification": {
+        "accountable": [
+            "systems architect"
+        ],
+        "responsible": [
+            "business information manager"
+        ],
+        "contributor": [
+            "systems analyst"
+        ]
+    },
+    "ict governance policy": {
+        "accountable": [
+            "chief information officer"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "ict department and budget": {
+        "accountable": [
+            "chief information officer"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "digital transformation strategy": {
+        "accountable": [],
+        "responsible": [
+            "chief information officer",
+            "digital transformation leader"
+        ],
+        "contributor": []
+    },
+    "information security strategy": {
+        "accountable": [],
+        "responsible": [
+            "chief information officer",
+            "information security manager"
+        ],
+        "contributor": []
+    },
+    "data management system": {
+        "accountable": [
+            "database administrator"
+        ],
+        "responsible": [],
+        "contributor": [
+            "data scientist"
+        ]
+    },
+    "solution in operation (data management system)": {
+        "accountable": [],
+        "responsible": [
+            "database administrator"
+        ],
+        "contributor": []
+    },
+    "test procedure": {
+        "accountable": [],
+        "responsible": [
+            "test specialist"
+        ],
+        "contributor": [
+            "database administrator",
+            "developer",
+            "devops expert"
+        ]
+    },
+    "data protection policy": {
+        "accountable": [],
+        "responsible": [
+            "data specialist"
+        ],
+        "contributor": [
+            "database administrator"
+        ]
+    },
+    "data collection and representation": {
+        "accountable": [
+            "data scientist"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "data selection": {
+        "accountable": [
+            "data scientist"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "data analytics": {
+        "accountable": [],
+        "responsible": [
+            "data scientist"
+        ],
+        "contributor": [
+            "data specialist"
+        ]
+    },
+    "data management plan": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "data scientist"
+        ]
+    },
+    "ict quality policy (data)": {
+        "accountable": [
+            "data specialist"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "documented code": {
+        "accountable": [
+            "developer"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "software component": {
+        "accountable": [
+            "systems analyst"
+        ],
+        "responsible": [
+            "developer"
+        ],
+        "contributor": []
+    },
+    "software design description": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "developer"
+        ]
+    },
+    "user experience design": {
+        "accountable": [],
+        "responsible": [
+            "solution designer"
+        ],
+        "contributor": [
+            "developer"
+        ]
+    },
+    "integrated solution": {
+        "accountable": [
+            "devops expert",
+            "systems architect"
+        ],
+        "responsible": [
+            "systems analyst"
+        ],
+        "contributor": [
+            "project manager",
+            "test specialist"
+        ]
+    },
+    "development process": {
+        "accountable": [],
+        "responsible": [
+            "devops expert"
+        ],
+        "contributor": [
+            "scrum master",
+            "systems architect"
+        ]
+    },
+    "release": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "devops expert"
+        ]
+    },
+    "non functional requirements": {
+        "accountable": [],
+        "responsible": [
+            "digital media specialist"
+        ],
+        "contributor": []
+    },
+    "user engagement evaluation tools": {
+        "accountable": [],
+        "responsible": [
+            "digital media specialist"
+        ],
+        "contributor": []
+    },
+    "solution in operation": {
+        "accountable": [
+            "service manager",
+            "solution designer"
+        ],
+        "responsible": [
+            "systems adminstrator"
+        ],
+        "contributor": [
+            "digital media specialist"
+        ]
+    },
+    "digital transformation roadmap": {
+        "accountable": [
+            "digital transformation leader"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "solution and critical business process integration proposal": {
+        "accountable": [],
+        "responsible": [
+            "systems architect"
+        ],
+        "contributor": [
+            "digital transformation leader"
+        ]
+    },
+    "enterprise architecture": {
+        "accountable": [
+            "enterprise architect"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "new solution and critical business process integration proposal": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "enterprise architect"
+        ]
+    },
+    "knowledge or information base": {
+        "accountable": [],
+        "responsible": [
+            "information security manager"
+        ],
+        "contributor": [
+            "enterprise architect"
+        ]
+    },
+    "business process definition": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "enterprise architect"
+        ]
+    },
+    "budget plan": {
+        "accountable": [
+            "ict operations manager"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "hr development plan": {
+        "accountable": [],
+        "responsible": [
+            "ict operations manager"
+        ],
+        "contributor": []
+    },
+    "training program": {
+        "accountable": [],
+        "responsible": [
+            "ict operations manager"
+        ],
+        "contributor": [
+            "scrum master"
+        ]
+    },
+    "sustainable ict policy": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "ict operations manager"
+        ]
+    },
+    "information security policy": {
+        "accountable": [
+            "information security manager"
+        ],
+        "responsible": [],
+        "contributor": [
+            "information security specialist"
+        ]
+    },
+    "risk management policy": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "information security manager",
+            "information security specialist",
+            "quality assurance manager"
+        ]
+    },
+    "new solution and critical business integration proposal": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "information security manager"
+        ]
+    },
+    "knowledge or information base (security)": {
+        "accountable": [
+            "information security specialist"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "solution and critical business process integration proposal (security)": {
+        "accountable": [],
+        "responsible": [
+            "information security specialist"
+        ],
+        "contributor": []
+    },
+    "information security risk assessment": {
+        "accountable": [],
+        "responsible": [
+            "information security specialist"
+        ],
+        "contributor": []
+    },
+    "information security risk treatment plan": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "information security specialist"
+        ]
+    },
+    "solution documentation (network)": {
+        "accountable": [],
+        "responsible": [
+            "network specialist"
+        ],
+        "contributor": []
+    },
+    "solution in operation (network)": {
+        "accountable": [],
+        "responsible": [
+            "network specialist"
+        ],
+        "contributor": []
+    },
+    "solution specification (network)": {
+        "accountable": [],
+        "responsible": [
+            "network specialist"
+        ],
+        "contributor": []
+    },
+    "solved incident": {
+        "accountable": [
+            "technical specialist"
+        ],
+        "responsible": [
+            "service manager"
+        ],
+        "contributor": [
+            "network specialist",
+            "service support",
+            "systems adminstrator"
+        ]
+    },
+    "information security assessment": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "network specialist"
+        ]
+    },
+    "team backlog": {
+        "accountable": [
+            "product owner"
+        ],
+        "responsible": [],
+        "contributor": [
+            "scrum master"
+        ]
+    },
+    "solution requirements": {
+        "accountable": [
+            "product owner"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "release plan": {
+        "accountable": [
+            "product owner"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "program backlog": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "product owner"
+        ]
+    },
+    "sprint planning": {
+        "accountable": [],
+        "responsible": [
+            "scrum master"
+        ],
+        "contributor": [
+            "product owner"
+        ]
+    },
+    "project plan": {
+        "accountable": [
+            "project manager"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "validated solution": {
+        "accountable": [
+            "project manager"
+        ],
+        "responsible": [],
+        "contributor": [
+            "test specialist"
+        ]
+    },
+    "solution documentation": {
+        "accountable": [],
+        "responsible": [
+            "project manager"
+        ],
+        "contributor": [
+            "technical specialist",
+            "test specialist"
+        ]
+    },
+    "quality plan": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "project manager"
+        ]
+    },
+    "change management plan": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "project manager"
+        ]
+    },
+    "quality performance indicators": {
+        "accountable": [],
+        "responsible": [
+            "quality assurance manager"
+        ],
+        "contributor": [
+            "service manager"
+        ]
+    },
+    "ict quality policy": {
+        "accountable": [],
+        "responsible": [
+            "quality assurance manager"
+        ],
+        "contributor": []
+    },
+    "quality assurance": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "quality assurance manager"
+        ]
+    },
+    "iteration retrospective": {
+        "accountable": [
+            "scrum master"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "service level agreement": {
+        "accountable": [],
+        "responsible": [
+            "service manager"
+        ],
+        "contributor": []
+    },
+    "service catalogue": {
+        "accountable": [],
+        "responsible": [
+            "service manager"
+        ],
+        "contributor": []
+    },
+    "first level support": {
+        "accountable": [],
+        "responsible": [
+            "service support"
+        ],
+        "contributor": []
+    },
+    "incidents database": {
+        "accountable": [],
+        "responsible": [
+            "service support"
+        ],
+        "contributor": [
+            "systems adminstrator"
+        ]
+    },
+    "escalation process": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "service support"
+        ]
+    },
+    "second level support": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "service support"
+        ]
+    },
+    "solution design description": {
+        "accountable": [],
+        "responsible": [
+            "solution designer"
+        ],
+        "contributor": []
+    },
+    "hardware component": {
+        "accountable": [
+            "systems analyst"
+        ],
+        "responsible": [],
+        "contributor": []
+    },
+    "ict model": {
+        "accountable": [],
+        "responsible": [],
+        "contributor": [
+            "systems analyst"
+        ]
+    },
+    "up-to-date solution": {
+        "accountable": [],
+        "responsible": [
+            "technical specialist"
+        ],
+        "contributor": []
+    },
+    "test plan": {
+        "accountable": [],
+        "responsible": [
+            "test specialist"
+        ],
+        "contributor": []
+    },
+    "test result": {
+        "accountable": [],
+        "responsible": [
+            "test specialist"
+        ],
+        "contributor": []
+    }
+}

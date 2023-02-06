@@ -1,0 +1,23 @@
+
+.dev {
+    background-color: #999999;
+}
+
+.indev {
+    background-color: #990099;
+}
+
+.role {
+    margin: 16px;
+    padding: 16px;
+}
+
+.rolecard-title {
+    margin-bottom: 20px;
+}
+
+.rolecard-subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+

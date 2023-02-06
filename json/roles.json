@@ -1,0 +1,1806 @@
+{
+    "account manager": {
+        "summary": "Senior focal point for client sales and customer satisfaction.",
+        "mission": "Builds business relationships with clients to facilitate the sale of hardware, software, telecommunications or ICT services. Identifies opportunities and manages sourcing and delivery of products to customers. Has responsibility for achieving sales targets and maintaining profitability.",
+        "deliverables": {
+            "accountable": [
+                "sale"
+            ],
+            "responsible": [
+                "business relationship"
+            ],
+            "contributor": [
+                "sales forecast",
+                "technical proposal",
+                "production forecast"
+            ]
+        },
+        "tasks": [
+            "Maintain overall customer satisfaction with products and/or services",
+            "Identify opportunities to propose new products or services",
+            "Provide the primary contact point for client executive management",
+            "Deliver value added presentations related to products and services to customer executive management",
+            "Lead negotiations to establish profitable contracts with client(s)",
+            "Maintain and enhance business relationships"
+        ],
+        "competencies": {
+            "D.5. Sales Development": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "D.6. Digital Marketing": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "D.7. Data Science and Analytics": {
+                "available": [
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.1. Forecast Development": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.4. Relationship Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "business analyst": {
+        "summary": "Analyses the business domain and optimises business performance through technology application.",
+        "mission": "Analyses the information and the processes needed to support business plans. Formulates functional and non-functional requirements of the business organisation and advises on the lifecycle of the information solutions. Evaluates the impact in terms of change management.",
+        "deliverables": {
+            "accountable": [
+                "business requirements"
+            ],
+            "responsible": [
+                "business case",
+                "business relationship",
+                "data model"
+            ],
+            "contributor": [
+                "business plan",
+                "ict strategy and implementation"
+            ]
+        },
+        "tasks": [
+            "Contribute to the preparation of the organisation’s business plan",
+            "Analyse business requirements and design related processes",
+            "Support Digital Transformation, identifying areas for improvement in business processes",
+            "Provide possible ICT solutions compliant with the ICT strategy",
+            "Develop business cases related to the proposed solutions",
+            "Analyse required information and documents",
+            "Develop plan for continuity of operations"
+        ],
+        "competencies": {
+            "A.1. IS and Business Strategy Alignment": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.3. Business Plan Development": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.10. Information and Knowledge Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.11. Needs Identification": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.5. Process Improvement": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "business information manager": {
+        "summary": "Proposes, plans and manages functional development of the Information System (IS) focusing upon the needs of users.",
+        "mission": "Aligns the Information System to the business strategy within their area/domain. Ensures continuous enhancement whilst accounting for user requirements, service quality and budgetary constraints.",
+        "deliverables": {
+            "accountable": [
+                "project portfolio"
+            ],
+            "responsible": [
+                "solution specification"
+            ],
+            "contributor": [
+                "business plan"
+            ]
+        },
+        "tasks": [
+            "Manage the information and communication technology development focused on user needs",
+            "Prepare for changes to the Information System influenced by technology updates or user needs",
+            "Formalise, consolidate and drive the development of the IS configuration",
+            "Evaluate the relevance of the Information Systems to users",
+            "Liaise between the user community and the IS infrastructure",
+            "Translate user requirements into functional specifications"
+        ],
+        "competencies": {
+            "A.1. IS and Business Strategy Alignment": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.3. Business Plan Development": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.4. Relationship Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.7. Business Change Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.9. Information Systems Governance": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            }
+        }
+    },
+    "chief information officer": {
+        "summary": "Develops and maintains Information Systems to generate value for the business and meet the organisation's needs.",
+        "mission": "Ensures the alignment of the Information Systems strategy with the business strategy. Provides leadership for the implementation and development of the organisations architecture and applications.",
+        "deliverables": {
+            "accountable": [
+                "ict strategy and implementation",
+                "ict governance policy",
+                "ict department and budget"
+            ],
+            "responsible": [
+                "digital transformation strategy",
+                "project portfolio",
+                "information security strategy"
+            ],
+            "contributor": []
+        },
+        "tasks": [
+            "Enable the company's digital strategy",
+            "Define and implement ICT strategy and ICT governance",
+            "Ensure the reliability, confidentiality, security and integrity of Information Systems",
+            "Ensure the quality and management of ICT customer-supplier relationships in particular contracts",
+            "Define and ensure compliance with Service Level Agreements",
+            "Ensure that ICT change management processes are implemented"
+        ],
+        "competencies": {
+            "A.1. IS and Business Strategy Alignment": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "A.3. Business Plan Development": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "E.2. Project and Portfolio Management": {
+                "available": [
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "E.4. Relationship Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.9. Information Systems Governance": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            }
+        }
+    },
+    "database administrator": {
+        "summary": "Designs, implements or monitors and maintains data sets, structured (databases) and unstructured (big data).",
+        "mission": "Administer and monitor data management systems and ensures design, consistency, quality and security.",
+        "deliverables": {
+            "accountable": [
+                "data management system"
+            ],
+            "responsible": [
+                "solution in operation (data management system)"
+            ],
+            "contributor": [
+                "test procedure",
+                "data protection policy"
+            ]
+        },
+        "tasks": [
+            "Apply standards methods and tools for measuring and reporting on wide set of relevant performance indicators (response time, availability, safety, integrity)",
+            "Produce data set procedures and instructions for other analysts or administrators",
+            "Monitor and maintain data management systems",
+            "Ensure the integrity and security of existing data management systems",
+            "Identify, investigate and correct problems or incidents related to data management systems",
+            "Provide training, support, advice and guidance on data set issues to other information system practitioners"
+        ],
+        "competencies": {
+            "B.1. Application Development": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "C.2. Change Support": {
+                "available": [
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "D.10. Information and Knowledge Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 3
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "data scientist": {
+        "summary": "Leads the process of applying data analytics. Delivers insights from data by optimising the analytics process and presenting visual data representations.",
+        "mission": "Finds, manages and merges multiple data sources and ensures consistency of datasets. Identifies the mathematical models, selects and optimises the algorhythms to deliver business value through insights. Communicates patterns and recommends ways of applying data.",
+        "deliverables": {
+            "accountable": [
+                "data collection and representation",
+                "data selection"
+            ],
+            "responsible": [
+                "data analytics"
+            ],
+            "contributor": [
+                "data management plan",
+                "data management system"
+            ]
+        },
+        "tasks": [
+            "Represent business challenges through mathematical models",
+            "Collect, understand, clean, analyse, integrate and investigate internal and external data to achieve the mission",
+            "Create and test hypothesis",
+            "Uncover data correlations/relationships in support of measurement and predication",
+            "Identify the right visualisation models depending on the business challenges and the data sets",
+            "Address data security through active preventative strategies",
+            "Select and optimise algorhythms using data science tools",
+            "Comply with ethical guidelines and legal requirements"
+        ],
+        "competencies": {
+            "A.7. Technology Trend Monitoring": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "A.9. Innovating": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.10. Information and Knowledge Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "D.11. Needs Identification": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.1. Forecast Development": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "data specialist": {
+        "summary": "Ensures the implementation of the organisations data management policy.",
+        "mission": "Ensures asset protection through the provision of clean, consistent, quality assured data. Maintains the integrity of data, stores and searches data and supports presentation of data analysis.",
+        "deliverables": {
+            "accountable": [
+                "ict quality policy (data)"
+            ],
+            "responsible": [
+                "data protection policy",
+                "data model"
+            ],
+            "contributor": [
+                "data analytics"
+            ]
+        },
+        "tasks": [
+            "Define, build and optimise data models",
+            "Proactively protect confidentiality and security of data",
+            "Ensure data lifecycle support",
+            "Curate and archive data",
+            "Advise on appropriate data analytic methodology",
+            "Ensure data quality and integrity",
+            "Maintain data quality and compliance to legal standards"
+        ],
+        "competencies": {
+            "A.6. Application Design": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "D.10. Information and Knowledge Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.6. ICT Quality Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "developer": {
+        "summary": "Designs and/ or codes components to meet solution specifications.",
+        "mission": "Ensures building and implementing of ICT applications. Contributes to low-level design. Writes code to ensure optimum efficiency and functionality and user experience.",
+        "deliverables": {
+            "accountable": [
+                "documented code"
+            ],
+            "responsible": [
+                "software component"
+            ],
+            "contributor": [
+                "software design description",
+                "test procedure",
+                "user experience design"
+            ]
+        },
+        "tasks": [
+            "Develop engineer and integrate components",
+            "Follow user experience guidelines",
+            "Aware of and address known security vulnerabilities, applying security by design",
+            "Shape documentation",
+            "Provide advanced, component technical support",
+            "Resolve issues prior to and following testing"
+        ],
+        "competencies": {
+            "B.1. Application Development": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            },
+            "B.3. Testing": {
+                "available": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            },
+            "B.5. Documentation Production": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "C.4. Problem Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "devops expert": {
+        "summary": "Implements processes and tools to successfully deploy DevOps techniques across the entire solution development lifecycle.",
+        "mission": "Applies a cross-functional, collaborative approach for the creation of customer-centric software solutions. Introduces automation throughout the software production system to deliver better software faster.",
+        "deliverables": {
+            "accountable": [
+                "integrated solution"
+            ],
+            "responsible": [
+                "development process"
+            ],
+            "contributor": [
+                "test procedure",
+                "release"
+            ]
+        },
+        "tasks": [
+            "Implement and manage continuous distribution methodologiesdigitaldigital transcript",
+            "Design systems with high levels of availability and scalability",
+            "Manage testing across the release lifecycle",
+            "Facilitate cross functional collaboration and engagement",
+            "Design and manage process automation tools",
+            "Adopt an agile software development methodology",
+            "Manage continuous integration tool management"
+        ],
+        "competencies": {
+            "B.1. Application Development": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "B.3. Testing": {
+                "available": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "B.4. Solution Deployment": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "C.2. Change Support": {
+                "available": [
+                    2,
+                    3
+                ],
+                "level": 3
+            }
+        }
+    },
+    "digital media specialist": {
+        "summary": "Integrates digital technology components for internal and external communication purposes.",
+        "mission": "Designs and codes social media applications and websites. Makes recommendations on Application Programming Interface (API) and supports efficiency through appropriate content management systems.",
+        "deliverables": {
+            "accountable": [],
+            "responsible": [
+                "non functional requirements",
+                "user engagement evaluation tools"
+            ],
+            "contributor": [
+                "solution in operation"
+            ]
+        },
+        "tasks": [
+            "Carry out user experience design methods and translate into application requirements",
+            "Design web and multimedia applications content in line with user and customer needs",
+            "Test and resolve any technical, usability and accessibility issues",
+            "Ensure compliance with privacy, legal requirements and accessibility standards",
+            "Provide guidance on search engine optimisation (SEO)"
+        ],
+        "competencies": {
+            "A.6. Application Design": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 2
+            },
+            "B.1. Application Development": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "B.3. Testing": {
+                "available": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            },
+            "B.4. Solution Deployment": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "D.6. Digital Marketing": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            }
+        }
+    },
+    "digital transformation leader": {
+        "summary": "Provides leadership for the implementation of the digital transformation strategy of the organisation.",
+        "mission": "Drives cultural change and builds digital capability to deliver innovative business models and processes.",
+        "deliverables": {
+            "accountable": [
+                "digital transformation roadmap"
+            ],
+            "responsible": [
+                "digital transformation strategy"
+            ],
+            "contributor": [
+                "solution and critical business process integration proposal"
+            ]
+        },
+        "tasks": [
+            "Shape and deliver a digital strategy",
+            "Develop awareness and education to improve digital capability",
+            "Demonstrate the benefits of digital transformation implementation",
+            "Advise and support on a ‘digital by design’ approach",
+            "Lead cultural change required to facilitate digital strategy",
+            "Lead and mobilise key organisation influencers to implement digital transformation"
+        ],
+        "competencies": {
+            "A.3. Business Plan Development": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "A.5. Architecture Design": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "A.9. Innovating": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "E.7. Business Change Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "E.9. Information Systems Governance": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            }
+        }
+    },
+    "enterprise architect": {
+        "summary": "Designs and maintains the holistic architecture of business processes and information systems.",
+        "mission": "Maintains a holistic perspective of the organisation strategy, processes, information, security and ICT assets. Links the mission, strategy and business processes to the IT strategy. Ensures project choices are integrated consistently, efficiently and in a sustainable manner according to the enterprise’s digital standards.",
+        "deliverables": {
+            "accountable": [
+                "enterprise architecture"
+            ],
+            "responsible": [],
+            "contributor": [
+                "business plan",
+                "new solution and critical business process integration proposal",
+                "knowledge or information base",
+                "business process definition"
+            ]
+        },
+        "tasks": [
+            "Align digital and ICT strategies and planning with the organisation’s business goals",
+            "Anticipate future business needs and plan for how architecture will support/enable it",
+            "Streamline business processes, functions, procedures and workflows and apply a consistent implementation approach",
+            "Manage stakeholder engagement in the development of new processes and systems and verifies feasibility",
+            "Conduct post-implementation reviews to evaluate benefits accrued from new processes and systems",
+            "Build and maintain standards and enterprise architecture model and principles, for example process mapping",
+            "Evaluate the impact of changes within the ecosystem of the organisation (including political, technical, social, regulatory, legal) on the enterprise architecture"
+        ],
+        "competencies": {
+            "A.1. IS and Business Strategy Alignment": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "A.3. Business Plan Development": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.5. Architecture Design": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.7. Technology Trend Monitoring": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "ict operations manager": {
+        "summary": "Manages operations, people and overall ICT resources.",
+        "mission": "Implements and maintains a designated part of an ICT operation ensuring that activities are conducted in accordance with organisational rules, processes and standards. Plans changes and implements them in accordance with organisational strategy and budget. Risk manages and ensures the effectiveness of the ICT infrastructure.",
+        "deliverables": {
+            "accountable": [
+                "budget plan"
+            ],
+            "responsible": [
+                "hr development plan",
+                "training program"
+            ],
+            "contributor": [
+                "sustainable ict policy"
+            ]
+        },
+        "tasks": [
+            "Coordinate and manage staff",
+            "Direct, organize, plan and monitor activities",
+            "Negotiate the objectives and resources",
+            "Manage the departmental budget",
+            "Establish and monitor management information",
+            "Analyse and propose solutions for continuous productivity improvement",
+            "Manage the implementation and monitoring of IS quality assurance and security",
+            "Communicate with internal business departments and project owners"
+        ],
+        "competencies": {
+            "D.9. Personnel Development": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.2. Project and Portfolio Management": {
+                "available": [
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.6. ICT Quality Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "information security manager": {
+        "summary": "Leads and manages the organisation information security policy.",
+        "mission": "Defines the information security strategy and manages implementation across the organisation. Embeds proactive information security protection by assessing, informing, alerting and educating the entire organisation.",
+        "deliverables": {
+            "accountable": [
+                "information security policy"
+            ],
+            "responsible": [
+                "knowledge or information base",
+                "information security strategy"
+            ],
+            "contributor": [
+                "risk management policy",
+                "new solution and critical business integration proposal"
+            ]
+        },
+        "tasks": [
+            "Define the information security strategy and standards",
+            "Contribute to the development of the organisation’s security policy",
+            "Manages security audits",
+            "Evaluate risks, threats and consequences",
+            "Establish and manage prevention, detection, correction and remediation plans",
+            "Inform and raise awareness among general management and across all IT users and professionals",
+            "Conduct information security operations"
+        ],
+        "competencies": {
+            "A.7. Technology Trend Monitoring": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.1. Information Security Strategy Development": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.9. Information Systems Governance": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 5
+            }
+        }
+    },
+    "information security specialist": {
+        "summary": "Ensures the implementation of the organisation’s information security policy by the secure and appropriate use of ICT resources.",
+        "mission": "Defines, proposes and implements necessary information security techniques and practices in compliance with information security standards and procedures. Contributes to security practices, awareness and compliance by providing advice, support, information and training.",
+        "deliverables": {
+            "accountable": [
+                "knowledge or information base (security)"
+            ],
+            "responsible": [
+                "solution and critical business process integration proposal (security)",
+                "information security risk assessment"
+            ],
+            "contributor": [
+                "risk management policy",
+                "information security risk treatment plan",
+                "information security policy"
+            ]
+        },
+        "tasks": [
+            "Evaluate information security risks, threats and consequences and take appropriate action",
+            "Provide information security training and education",
+            "Provide technical validation of security tools, implement, configure and manage appropriate tools",
+            "Contribute to the definition of and actively promote information security standards and procedures throughout the IT and IT user communities",
+            "Identify and remediate security vulnerabilities",
+            "Audit security vulnerability",
+            "Monitor security developments to ensure the continued efficiency and effectiveness of information security processes and controls",
+            "Proactively evaluate new threats and counter potential information security incidents",
+            "Implements security techniques on all or part of an application, process, network or system within area of responsibility"
+        ],
+        "competencies": {
+            "A.7. Technology Trend Monitoring": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.9. Innovating": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.1. Information Security Strategy Development": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.3. Education and Training Provision": {
+                "available": [
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "network specialist": {
+        "summary": "Ensures the alignment of the network, including telecommunication and/or computer infrastructure to meet the organisation’s communication needs.",
+        "mission": "Manages and operates a networked information system, solving problems and faults to ensure defined service levels. Monitors and improves network performances and security.",
+        "deliverables": {
+            "accountable": [],
+            "responsible": [
+                "solution documentation (network)",
+                "solution in operation (network)",
+                "solution specification (network)"
+            ],
+            "contributor": [
+                "solved incident",
+                "information security assessment"
+            ]
+        },
+        "tasks": [
+            "Ensure communication performance, recovery, and security needs meet agreed service agreement standards",
+            "Contribute to define network design policies, philosophies and criteria",
+            "Investigate, diagnose and solve network problems",
+            "Use network management system tools to determine network load and model performance statistics",
+            "Maintain awareness of relevant legislation affecting network security",
+            "Configure network to protect against security threats",
+            "Monitor network to identify and address traffic bottle necks"
+        ],
+        "competencies": {
+            "A.6. Application Design": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "B.4. Solution Deployment": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "C.4. Problem Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "product owner": {
+        "summary": "Represents the needs of the stakeholder community, the voice of the customer, to the agile team.",
+        "mission": "Understands customer requirements and validates that the developed software solution meets requirements. Links business and Agile teams.",
+        "deliverables": {
+            "accountable": [
+                "team backlog",
+                "solution requirements",
+                "release plan"
+            ],
+            "responsible": [
+                "business relationship"
+            ],
+            "contributor": [
+                "program backlog",
+                "sprint planning"
+            ]
+        },
+        "tasks": [
+            "Build, edit, and maintain the team backlog",
+            "Define, prioritise and validate software requirements through User Stories",
+            "Establish story acceptance criteria and accept stories in the baseline",
+            "Drive iteration goals and iteration content",
+            "Work across teams to define and implement improvement stories to enhance speed and quality",
+            "Participate in team demo and retrospective"
+        ],
+        "competencies": {
+            "A.4. Product or Service Planning": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "A.9. Innovating": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.11. Needs Identification": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.4. Relationship Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "project manager": {
+        "summary": "Manages projects to achieve optimal performance and results.",
+        "mission": "Defines, implements and manages projects from conception to final delivery. Responsible for achieving optimal results, conforming to standards for quality, safety and sustainability and complying with defined scope, performance, costs, and schedule. Deploys agile practices where applicable.",
+        "deliverables": {
+            "accountable": [
+                "project plan",
+                "validated solution"
+            ],
+            "responsible": [
+                "solution documentation"
+            ],
+            "contributor": [
+                "quality plan",
+                "integrated solution",
+                "change management plan"
+            ]
+        },
+        "tasks": [
+            "Organize, coordinate and lead the project team",
+            "Maintain stakeholder engagement and communication",
+            "Supervise project progress",
+            "Coordinate, record and ensure quality compliance",
+            "Circulate and distribute information from the project owner",
+            "Ensure the project helps to support the organisation’s wider goals",
+            "Comply with budgets and delivery times",
+            "Update the project according to changing circumstances"
+        ],
+        "competencies": {
+            "A.4. Product or Service Planning": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.2. Project and Portfolio Management": {
+                "available": [
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.4. Relationship Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.7. Business Change Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 3
+            }
+        }
+    },
+    "quality assurance manager": {
+        "summary": "Ensures that processes and organisations implementing Information Systems comply to quality policies.",
+        "mission": "Establishes and operates an ICT quality approach aligned with the organisation’s culture. Commits the organisation to the achievement of quality goals and an encourages an environment of continuous improvement.",
+        "deliverables": {
+            "accountable": [],
+            "responsible": [
+                "quality performance indicators",
+                "ict quality policy"
+            ],
+            "contributor": [
+                "quality assurance",
+                "risk management policy"
+            ]
+        },
+        "tasks": [
+            "Establish and deploy the ICT quality policy",
+            "Organise and provide quality training",
+            "Provide ICT managers with quality performance indicators",
+            "Perform quality audits",
+            "Organise customer satisfaction surveys",
+            "Assist project team members to build and perform project quality plans"
+        ],
+        "competencies": {
+            "D.2. ICT Quality Strategy Development": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.5. Process Improvement": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.6. ICT Quality Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "scrum master": {
+        "summary": "Leads and coaches an agile team.",
+        "mission": "Creates a high performance self-managed dynamic team minimising impediments to development progress. Drives team by applying the agile process to achieve an optimesed work-flow through continuous improvement. Supports team goals and coordinates activities with other teams.",
+        "deliverables": {
+            "accountable": [
+                "iteration retrospective"
+            ],
+            "responsible": [
+                "sprint planning"
+            ],
+            "contributor": [
+                "development process",
+                "team backlog",
+                "training program"
+            ]
+        },
+        "tasks": [
+            "Help team improve and take responsibilty for their actions to deploy agile values, principles and practices",
+            "Support Product Owner in the backlog management",
+            "Apply team-building techniques to improve performances.",
+            "Promote continuous learning and professional development of team members",
+            "Ensure continuous improvement of software quality",
+            "Support team self-defined processes and rules",
+            "Facilitate regular team meetings, including daily stand-up, Iteration planning, team demo, and retrospective iteration"
+        ],
+        "competencies": {
+            "B.3. Testing": {
+                "available": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "B.6. ICT Systems Engineering": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "D.9. Personnel Development": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.4. Relationship Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.5. Process Improvement": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "service manager": {
+        "summary": "Plans, implements and manages solution provision.",
+        "mission": "Manages the definition of Service Level Agreements (SLAs), Operational Level Agreements (OLAs) contracts and Key Performance Indicators (KPIs). Provides people management of staff monitoring, reporting and fulfilling service activities. Takes mitigation action in case of non-fulfilment of agreements.",
+        "deliverables": {
+            "accountable": [
+                "solution in operation"
+            ],
+            "responsible": [
+                "service level agreement",
+                "solved incident",
+                "service catalogue"
+            ],
+            "contributor": [
+                "quality performance indicators",
+                "technical proposal"
+            ]
+        },
+        "tasks": [
+            "Define Service requirements",
+            "Negotiate SLA / OLA",
+            "Manage solution operation",
+            "Provide service delivery",
+            "Maintain and contribute to the creation of the department budget",
+            "Manage staff development"
+        ],
+        "competencies": {
+            "A.2. Service Level Management": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "C.3. Service Delivery": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "C.4. Problem Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "D.8. Contract Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "D.9. Personnel Development": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "service support": {
+        "summary": "Provides remote or onsite diagnosis or guidance to internal or external clients with technical issues.",
+        "mission": "Provides user support and troubleshoots ICT problems and issues. The primary objective is to enable users to maximize their productivity through efficient and secure use of ICT equipment or software applications.",
+        "deliverables": {
+            "accountable": [],
+            "responsible": [
+                "first level support",
+                "incidents database"
+            ],
+            "contributor": [
+                "solved incident",
+                "escalation process",
+                "second level support"
+            ]
+        },
+        "tasks": [
+            "Identify and diagnose issues and problems",
+            "Categorize and record reported queries and provide solutions",
+            "Support problem identification",
+            "Advise users on appropriate course of action",
+            "Monitor issues from start to resolution",
+            "Escalate, if needed, unresolved problems to a higher level of support",
+            "Provide essential online security advice and support"
+        ],
+        "competencies": {
+            "C.1. User Support": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 2
+            },
+            "C.2. Change Support": {
+                "available": [
+                    2,
+                    3
+                ],
+                "level": 2
+            },
+            "C.3. Service Delivery": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 1
+            },
+            "C.4. Problem Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            }
+        }
+    },
+    "solution designer": {
+        "summary": "Provides the translation of business requirements into end-to-end IT solutions.",
+        "mission": "Proposes and designs solutions in line with technical architecture which fit business requirements and support change.",
+        "deliverables": {
+            "accountable": [
+                "solution in operation"
+            ],
+            "responsible": [
+                "solution design description",
+                "user experience design"
+            ],
+            "contributor": [
+                "project portfolio"
+            ]
+        },
+        "tasks": [
+            "Examine and interpret business requirements",
+            "Establish solution intent",
+            "Align solution with technical architecture",
+            "Identify potential technical design risks",
+            "Supervise the built in quality",
+            "Operate within the budgetary framework to validate the financial impact of design decisions",
+            "Identify opportunities for innovation",
+            "Plan technology roadmaps"
+        ],
+        "competencies": {
+            "A.6. Application Design": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "A.9. Innovating": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "D.10. Information and Knowledge Management": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 3
+            },
+            "D.11. Needs Identification": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            }
+        }
+    },
+    "systems adminstrator": {
+        "summary": "Administers ICT System components to meet service requirements.",
+        "mission": "Installs software, configures and upgrades ICT systems. Administers day-to-day operations to satisfy continuity of service, recovery, security and performance needs.",
+        "deliverables": {
+            "accountable": [],
+            "responsible": [
+                "solution in operation"
+            ],
+            "contributor": [
+                "solved incident",
+                "incidents database"
+            ]
+        },
+        "tasks": [
+            "Investigate, diagnose and solve system related problems",
+            "Install and upgrades software",
+            "Test upgrades",
+            "Schedule installation work, to minimize disruption",
+            "Diagnose and solve hardware or software problems",
+            "Comply with organisation procedures to ensure integrity and security of the system"
+        ],
+        "competencies": {
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            },
+            "B.3. Testing": {
+                "available": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            },
+            "C.2. Change Support": {
+                "available": [
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "C.4. Problem Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.8. Information Security Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            }
+        }
+    },
+    "systems analyst": {
+        "summary": "Analyses organisation requirements and specifies software and system requirements for new IT solutions.",
+        "mission": "Ensures the technical design and contributes to the implementation of new and/or enhanced software provision. Provides solutions for the improvement of organisational efficiency and productivity.",
+        "deliverables": {
+            "accountable": [
+                "software component",
+                "hardware component"
+            ],
+            "responsible": [
+                "integrated solution",
+                "technical proposal"
+            ],
+            "contributor": [
+                "ict model",
+                "solution specification"
+            ]
+        },
+        "tasks": [
+            "Analyse existing systems and business models",
+            "Recommend resolutions and improvements",
+            "Provide integrated solutions",
+            "Provide consolidate findings on components or processes",
+            "Author technical performance requirements",
+            "Ensure security by design",
+            "Maps and documents interfaces between legacy and new systems"
+        ],
+        "competencies": {
+            "A.5. Architecture Design": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 3
+            },
+            "B.5. Documentation Production": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "B.6. ICT Systems Engineering": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "E.6. ICT Quality Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            }
+        }
+    },
+    "systems architect": {
+        "summary": "Plans, designs and integrates ICT system components including hardware, software and services.",
+        "mission": "Designs, integrates and implements complex technical ICT solutions ensuring procedures and models for development are current and comply with common standards. Monitors new technology developments and applies if appropriate. Provides technological design leadership.",
+        "deliverables": {
+            "accountable": [
+                "solution specification",
+                "integrated solution"
+            ],
+            "responsible": [
+                "solution and critical business process integration proposal"
+            ],
+            "contributor": [
+                "development process"
+            ]
+        },
+        "tasks": [
+            "Specify and implement the architecture of complex ICT solutions",
+            "Lead development and integration of components",
+            "Lead and/ or conduct system integration",
+            "Ensure incorporation of security by design",
+            "Analyse technical and business requirements",
+            "Develop and maintain a comprehensive record of usability requirements"
+        ],
+        "competencies": {
+            "A.5. Architecture Design": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.7. Technology Trend Monitoring": {
+                "available": [
+                    3,
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "A.9. Innovating": {
+                "available": [
+                    4,
+                    5
+                ],
+                "level": 4
+            },
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 4
+            },
+            "B.6. ICT Systems Engineering": {
+                "available": [
+                    3,
+                    4
+                ],
+                "level": 4
+            }
+        }
+    },
+    "technical specialist": {
+        "summary": "Maintains and repairs hardware, software and service applications.",
+        "mission": "Effectively maintains customer hardware/software. Responsible for delivering timely and effective repairs to ensure optimal system performance and superior customer satisfaction.",
+        "deliverables": {
+            "accountable": [
+                "solved incident"
+            ],
+            "responsible": [
+                "up-to-date solution"
+            ],
+            "contributor": [
+                "solution documentation"
+            ]
+        },
+        "tasks": [
+            "Identify software and hardware problems and repair",
+            "Perform regular maintenance on hardware and software components",
+            "Install cables and configures hardware and software",
+            "Document system addresses and configurations",
+            "Run diagnostic programs or use test equipment to locate source of problems",
+            "Communicate effectively with end users and customer management",
+            "Maintain security and functionality through application of program temporary fixes"
+        ],
+        "competencies": {
+            "C.2. Change Support": {
+                "available": [
+                    2,
+                    3
+                ],
+                "level": 2
+            },
+            "C.3. Service Delivery": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 2
+            },
+            "C.4. Problem Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            },
+            "E.6. ICT Quality Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            }
+        }
+    },
+    "test specialist": {
+        "summary": "Designs and performs testing plans.",
+        "mission": "Ensures delivered or existing products, applications or services comply with technical and user needs and specifications. For existing systems, applications, innovations and changes; diagnoses failure of products or services to meet specification.",
+        "deliverables": {
+            "accountable": [],
+            "responsible": [
+                "test plan",
+                "test procedure",
+                "test result"
+            ],
+            "contributor": [
+                "integrated solution",
+                "validated solution",
+                "solution documentation"
+            ]
+        },
+        "tasks": [
+            "Select and develop integration testing techniques to ensure the system meets requirements.",
+            "Design and customize integration tests, identify open issues.",
+            "Organise test plans and procedures for white and black box testing at unit, module, system and integration levels.",
+            "Establish procedures for result analysis and reporting.",
+            "Design and implement defect tracking and correction procedures",
+            "Write test program to assess software quality",
+            "Develop tools to increase test effectiveness"
+        ],
+        "competencies": {
+            "B.2. Component Integration": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "B.3. Testing": {
+                "available": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "level": 3
+            },
+            "B.4. Solution Deployment": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 2
+            },
+            "B.5. Documentation Production": {
+                "available": [
+                    1,
+                    2,
+                    3
+                ],
+                "level": 3
+            },
+            "E.3. Risk Management": {
+                "available": [
+                    2,
+                    3,
+                    4
+                ],
+                "level": 2
+            }
+        }
+    }
+}

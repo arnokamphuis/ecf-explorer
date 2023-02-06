@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Item 1",
+      "description": "This is a sample item.",
+      "rating": 4
+    },
+    {
+      "name": "Item 2",
+      "description": "This is another sample item.",
+      "rating": 2
+    },
+    {
+      "name": "Item 3",
+      "description": "This is yet another sample item.",
+      "rating": 5
+    }
+  ]
+  
