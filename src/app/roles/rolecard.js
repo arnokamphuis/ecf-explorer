@@ -13,7 +13,7 @@ function CompetencyDescription({comp, lvl}) {
       if (res.status == 200) {
         const json = await res.json();
         const objectData = JSON.parse(json);
-        setData(objectData["activity"]);
+        setData([objectData["activity"], objectData["phase"]]);
       } else {
         setData("UNAVAILABLE");
       }
@@ -21,17 +21,17 @@ function CompetencyDescription({comp, lvl}) {
     fetchData();
   }, []);
 
-  return <div><Typography className="ml-2 font-bold">{comp}:</Typography><Typography className="ml-6 text-sx">{data} </Typography></div>
+  return <div><p className="ml-4 font-bold">{comp} <span className="text-sx">({data[1]})</span>:</p><p className="ml-8 text-sx">{data[0]} </p></div>
 }
 
 export default function RoleCard({name, level, indev, dev}) {
   return <Card className="role" key={name}>
     <div>
-      <h2 className="text-3xl font-bold rolecard-title mt-2">{name.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())}</h2>
-      <h3 className="text-xl font-bold rolecard-subtitle">IN DEVELOPMENT:</h3>
+      <h2 className="text-3xl font-bold underline">{name.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())}</h2>
+      <h3 className="text-xl font-bold mt-6 mb-2">REQUIRED AT THIS LEVEL:</h3>
       { indev ? indev.map((n) => ( <CompetencyDescription comp={n} lvl={level} /> )) : "" }      
-      <h3 className="text-xl font-bold rolecard-subtitle">DEVELOPED:</h3>
-      { dev ? dev.map((n) => ( <CompetencyDescription comp={n} lvl={level} /> )) : "" }      
+      <h3 className="text-xl font-bold mt-6 mb-2">DEVELOPED AT LOWER LEVEL:</h3>
+      { dev ? dev.map((n) => ( <CompetencyDescription comp={n} lvl={level-1} /> )) : "" }      
     </div>
   </Card>
 }
