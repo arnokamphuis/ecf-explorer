@@ -18,6 +18,7 @@ function CompetencyDescription({comp, lvl}) {
         setData("UNAVAILABLE");
       }
     };
+
     fetchData();
   }, []);
 
