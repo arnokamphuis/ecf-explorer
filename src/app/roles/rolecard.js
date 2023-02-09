@@ -6,7 +6,7 @@ import Tooltip from '@mui/material/Tooltip';
 import './rolecard.modules.css';
 
 function CompetencyDescription({ comp, lvl }) {
-  const [data, setData] = useState(comp, lvl);
+  const [data, setData] = useState(["",""]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,7 +21,7 @@ function CompetencyDescription({ comp, lvl }) {
     };
 
     fetchData();
-  }, []);
+  }, [comp,lvl]);
 
   return <div><p className="ml-4 font-bold">{comp} <span className="text-sx">({data[1]})</span>:</p><p className="ml-8 text-sx">{data[0]} </p></div>
 }
