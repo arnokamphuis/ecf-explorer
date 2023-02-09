@@ -11,9 +11,10 @@ export default function Roles() {
   const [filterValue, setFilterValue] = useState(1);
 
   const [roles, setRoles] = useState({});
+  const [roleDescriptions, setRoleDescriptions] = useState({});
 
   useEffect(() => {
-    const fetchRoles = async() => {
+    const fetchRoles = async () => {
       const res = await fetch('/api/roles');
       if (res.status == 200) {
         const json = await res.json();
@@ -24,9 +25,14 @@ export default function Roles() {
           roles[n] = false;
         }
         setRoles(roles);
+
+        for (const [n, d] of Object.entries(rolesData)) {
+          roleDescriptions[n] = "SUMMARY: " + d["summary"] + "\n\nMISSION: " + d["mission"];
+        }
+        setRoleDescriptions(roleDescriptions);
       }
     };
-  
+
     fetchRoles();
 
     const fetchData = async () => {
@@ -73,20 +79,20 @@ export default function Roles() {
 
       <Grid container spacing={2} alignItems="top" columns={{ xs: 4, md: 8 }}>
         {roles ? Object.keys(roles).map((name) => (
-            <RoleChecker name={name} handleClick={handleClick} />
-          )) : <></>}
+          <RoleChecker key={"rc" + name} name={name} handleClick={handleClick} />
+        )) : <></>}
       </Grid>
 
 
       <Grid container spacing={2} alignItems="top" columns={{ xs: 2, md: 2 }}>
         <Grid item xs={1}>
           {indevData.map((item) => (
-              roles[item.name] ? <RoleCard className="indev" name={item.name} level={filterValue} indev={item['in development']} dev={item['developed']} /> : <></>
+            roles[item.name] ? <RoleCard key={"rc_indev" + item.name} className="indev" name={item.name} description={roleDescriptions[item.name]} level={filterValue} indev={item['in development']} dev={item['developed']} /> : <></>
           ))}
         </Grid>
         <Grid item xs={1}>
           {devData.map((item) => (
-            roles[item.name] ? <RoleCard key={item.name} className="dev" name={item.name} level={filterValue} indev={item['in development']} dev={item['developed']} /> : <></>
+            roles[item.name] ? <RoleCard key={"rc_dev" + item.name} className="dev" name={item.name} description={roleDescriptions[item.name]} level={filterValue} indev={item['in development']} dev={item['developed']} /> : <></>
           ))}
         </Grid>
       </Grid>
