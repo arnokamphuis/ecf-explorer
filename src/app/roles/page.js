@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Card, Typography, Slider, Checkbox } from "@material-ui/core";
 import Grid from '@mui/material/Grid';
 import RoleCard from './rolecard';
@@ -45,17 +45,20 @@ export default function Roles() {
   }, []);
 
   const handleClick = (e, id) => {
-    roles[id] = !roles[id];
-    setRoles(roles);
+    let rolesClone = {...roles}
+    rolesClone[id] = !rolesClone[id];
+    setRoles(rolesClone);
   };
 
-  const indevData = data
+    const indevData = useMemo(() => {
+      return data
     ? data[filterValue]['in development']
-    : [];
+    : []}, [filterValue, data])
 
-  const devData = data
-    ? data[filterValue]['developed']
-    : [];
+    const devData = useMemo(() => {
+      return data
+      ? data[filterValue]['developed']
+      : []}, [filterValue, data])
 
   return (
     <div>
@@ -78,21 +81,21 @@ export default function Roles() {
       </Grid>
 
       <Grid container spacing={2} alignItems="top" columns={{ xs: 4, md: 8 }}>
-        {roles ? Object.keys(roles).map((name) => (
+        {roles && Object.keys(roles).map((name) => (
           <RoleChecker key={"rc" + name} name={name} handleClick={handleClick} />
-        )) : <></>}
+        ))}
       </Grid>
 
 
       <Grid container spacing={2} alignItems="top" columns={{ xs: 2, md: 2 }}>
         <Grid item xs={1}>
           {indevData.map((item) => (
-            roles[item.name] ? <RoleCard key={"rc_indev" + item.name} className="indev" name={item.name} description={roleDescriptions[item.name]} level={filterValue} indev={item['in development']} dev={item['developed']} /> : <></>
+            roles[item.name] && <RoleCard key={"rc_indev" + item.name} className="indev" name={item.name} description={roleDescriptions[item.name]} level={filterValue} indev={item['in development']} dev={item['developed']} /> 
           ))}
         </Grid>
         <Grid item xs={1}>
           {devData.map((item) => (
-            roles[item.name] ? <RoleCard key={"rc_dev" + item.name} className="dev" name={item.name} description={roleDescriptions[item.name]} level={filterValue} indev={item['in development']} dev={item['developed']} /> : <></>
+            roles[item.name] && <RoleCard key={"rc_dev" + item.name} className="dev" name={item.name} description={roleDescriptions[item.name]} level={filterValue} indev={item['in development']} dev={item['developed']} /> 
           ))}
         </Grid>
       </Grid>
