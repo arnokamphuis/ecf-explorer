@@ -1,7 +1,7 @@
 {
     "A.1. IS and Business Strategy Alignment": {
         "description": "Anticipates long term business requirements, influences improvement of the organisation’s process efficiency and effectiveness. Determines the IS model and enterprise architecture maintaining consistency with organisational policy and ensuring a secure environment. Recognises potential risks and business requirements to assure resilience in the alignment of systems and services to the business strategy. Makes strategic IS policy decisions for the enterprise, including sourcing strategies.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "4": "Provides leadership for the construction and implementation of long term innovative IS solutions.",
             "5": "Provides IS strategic leadership to reach consensus and commitment from the management team of the enterprise."
@@ -9,7 +9,7 @@
     },
     "A.2. Service Level Management": {
         "description": "Defines, validates and makes applicable service level agreements (SLAs) and\nunderpinning contracts tailored to services offered. Negotiates service performance\nlevels taking into account the needs and capacity of stakeholders and business.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "3": "Ensures the content of the SLA.",
             "4": "Negotiates revision of SLAs, in accordance with the overall objectives. Ensures the achievement of planned results."
@@ -17,7 +17,7 @@
     },
     "A.3. Business Plan Development": {
         "description": "Addresses the design and structure of a business or product plan including the identification of alternative approaches as well as return on investment propositions. Considers the possible and applicable sourcing models. Presents cost benefit analysis and reasoned arguments in support of the selected strategy. Ensures compliance with business risk and technology strategies. Communicates and sells business plan to relevant stakeholders and addresses political, financial, and organisational interests.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "3": "Exploits specialist knowledge to provide analysis of market environment etc.",
             "4": "Provides leadership for the creation of an information system strategy that meets the requirements of the business (e.g. distributed, mobility-based) and includes risks and opportunities.",
@@ -26,7 +26,7 @@
     },
     "A.4. Product or Service Planning": {
         "description": "Analyses and defines current and target status. Estimates cost effectiveness, points of risk, opportunities, strengths and weaknesses, with a critical approach. Creates structured plans; establishes time scales and milestones, ensuring optimisation of activities and resources. Manages services portfolio and change requests. Defines delivery quantity and provides an overview of additional documentation requirements. Specifies correct handling of products in accordance with current legislation.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "2": "Systematically documents standard and simple elements of a product.",
             "3": "Exploits specialist knowledge to create and maintain complex documents.",
@@ -35,7 +35,7 @@
     },
     "A.5. Architecture Design": {
         "description": "Specifies, refines, updates and makes available a formal approach to implement solutions and services, necessary to develop and operate the IS architecture, taking into account the requirements from business, management and data and information infrastructure. Identifies change requirements and the components involved: hardware, software, applications, processes, services, information and technology platform. Takes into account interoperability, reversibility, scalability, usability, accessibility and security, including the need to account for the development and management of vulnerability within existing and emerging technologies. Maintains alignment between business evolution and technology developments and services to ensure capacity of IT solutions according to SLA.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "3": "Exploits specialist knowledge to define relevant ICT technology and specifications to be deployed in the construction of multiple ICT projects, applications or infrastructure improvements.",
             "4": "Acts with wide ranging accountability to define the strategy to implement ICT technology compliant with business need. Takes account of the current technology platform, obsolescent equipment and latest technological innovations.",
@@ -44,7 +44,7 @@
     },
     "A.6. Application Design": {
         "description": "Analyses, specifies, updates and makes available a model to implement applications in accordance with IS policy and user/customer needs. Selects appropriate technical options for application design, optimising the balance between cost and quality. Designs data structures and builds system structure models according to analysis results through modelling languages. Ensures that all aspects take account of interoperability, usability, accessibility and security. Identifies a common reference framework to validate the models with representative users, based upon development models (e.g. iterative approach).",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "1": "Contributes to the design and general functional specification and interfaces.",
             "2": "Organises the overall planning of the design of the application.",
@@ -53,7 +53,7 @@
     },
     "A.7. Technology Trend Monitoring": {
         "description": "Investigates latest ICT technological developments to establish understanding of evolving technologies. Encourages and explores internal and external sources (including e.g. research activities, patents, start-up activities, digital communities) for innovative ideas and opportunities. Devises innovative solutions for the adoption or integration of existing or new technology and/or ideas into existing products, applications or services or for the creation of new ones.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "3": "Detects signs of change to provide supervision and analysis of current and trend-setting ICT technological developments. Establishes relationships with relevant communities.",
             "4": "Validates new and emerging technologies, coupled with expert understanding of the business, to envision and articulate solutions for the future. Creates the organisation wide trend monitoring processes.",
@@ -62,7 +62,7 @@
     },
     "A.8. Sustainability Management": {
         "description": "Estimates the impact of ICT solutions in terms of eco responsibilities, including energy consumption, waste treatment and environmental policy. Analyses the prospects and impacts in social and financial sustainability of ICT projects, developments, services and operations. Advises business and ICT stakeholders on sustainable options that are consistent with the business strategy. Applies an ICT purchasing and sales policy which fulfills eco-responsibilities.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "3": "Promotes awareness, training and commitment for the deployment of sustainable development and applies the necessary tools for piloting this approach.",
             "4": "Defines the strategy of sustainable IS development and digital services. Provides input into the business strategy to ensure that sustainability is considered and incorporated."
@@ -70,7 +70,7 @@
     },
     "A.9. Innovating": {
         "description": "Devises creative solutions for the provision of new concepts, ideas, products or services. Deploys novel and open thinking to envision exploitation of technological advances to address business / society needs or research direction.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "4": "Applies independent thinking and technology awareness to lead the integration of disparate concepts for the provision of unique solutions.",
             "5": "Provides strategic leadership for the introduction of new concepts. Guides innovation approaches and leads the cultural change to innovation."
@@ -78,7 +78,7 @@
     },
     "A.10. User Experience": {
         "description": "Appreciates and applies the foundational principles of human-computer-interaction to create digital products and services that are intuitive, easy to use, safe and efficient. Understands users needs and goals, applies understanding of user behaviour to develop alternative options and functions, of the digital product, to create a seamless user experience.",
-        "phase": "Build",
+        "phase": "Plan",
         "levels": {
             "2": "Applies digital interfaces options (web, mobile, IoT) and guidelines to achieve usability for all.",
             "3": "Establishes and cultivates relationships with customers and users to understand their tasks, needs and goals. Uses specialist methods to obtain a wide range of significant user engagement.",
