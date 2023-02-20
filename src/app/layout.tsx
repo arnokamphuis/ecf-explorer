@@ -1,9 +1,12 @@
 'use client';
 
-import React from 'react';
 import './globals.css'
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: React.ReactNode
+}
+
+export default function Layout({ children }: LayoutProps) {
     return (
       <html lang="en">
         <head></head>

@@ -1,13 +1,13 @@
 export type Levels = {
-    [level: number]: Level;
+    [level: string]: Level;
 }
 
 export type Level = {
-    developed: RoleDescription[];
-    "in development": RoleDescription[]
+    developed: LevelRoleDescription[];
+    "in development": LevelRoleDescription[]
 }
 
-type RoleDescription = {
+export type LevelRoleDescription = {
     name: string;
     developed: string[];
     "in development": string[];

@@ -17,10 +17,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         phase: filteredData.phase,
         activity: filteredData["levels"][level]
       }
-      return res.status(200).json(data)
+      return res.status(200).json(JSON.stringify(data))
     }
 
-    res.status(200).json(filteredData);
+    res.status(200).json(JSON.stringify(filteredData));
   } else {
     res.status(204).end();
   }

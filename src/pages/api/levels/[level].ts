@@ -10,7 +10,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const { level } = req.query
   if (typeof level === "string" && level in Object.keys(objectData) ) {
     const filteredData = objectData[level];
-    res.status(200).json(filteredData);
+    res.status(200).json(JSON.stringify(filteredData));
   } else {
     res.status(204).end();
   }
