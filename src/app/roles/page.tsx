@@ -47,9 +47,7 @@ export default function Roles() {
   }, []);
 
   const handleClick = (e: any, id: string | number) => {
-    let rolesClone: Record<keyof RolesType, boolean> = {...roles}
-    rolesClone[id] = !rolesClone[id];
-    setRoles(rolesClone);
+    setRoles((role) => ({...role, [id]: !roles[id]}));
   };
 
     const indevData = useMemo(() => {
