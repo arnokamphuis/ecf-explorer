@@ -8,7 +8,7 @@ export type Competency = {
     levels: CompetencyLevel;
 }
 
-type Phase = "Plan" | "Build" | "Run" | "Enable" | "Manage";
+export type Phase = "Plan" | "Build" | "Run" | "Enable" | "Manage";
 
 type CompetencyLevel = {
     [level: string]: string;

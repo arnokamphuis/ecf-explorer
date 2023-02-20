@@ -1,9 +1,10 @@
 'use client';
 
 import React from "react";
-import { Typography, Checkbox, FormControlLabel } from "@material-ui/core";
+import { Typography, FormControlLabel } from "@material-ui/core";
 import Grid from '@mui/material/Grid';
 import './rolecard.modules.css';
+import Checkbox from "@mui/material/Checkbox";
 
 type RoleCheckerProps = {
     name: string;
