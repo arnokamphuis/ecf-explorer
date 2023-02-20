@@ -70,7 +70,7 @@ export default function Roles() {
         <Grid item xs>
           <Slider
             value={filterValue}
-            onChange={(event, newValue) => setFilterValue(newValue)}
+            onChange={(event, newValue: number) => setFilterValue(newValue)}
             min={1}
             max={5}
             step={1}
