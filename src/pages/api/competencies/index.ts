@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import path from 'path';
 import { promises as fs } from 'fs';
-import { Competencies, Competency } from '../../types/competency';
+import { Competencies, Competency } from '../../../types/competency';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Competencies | string>) {
   const jsonDirectory = path.join(process.cwd(), 'json');
