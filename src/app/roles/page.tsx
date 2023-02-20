@@ -1,13 +1,16 @@
 'use client';
 
 import React, { useState, useEffect, useMemo } from "react";
-import { Card, Typography, Slider, Checkbox } from "@material-ui/core";
+import { Card, Typography, Checkbox } from "@material-ui/core";
+import { Slider } from "@mui/material";
 import Grid from '@mui/material/Grid';
 import RoleCard from './rolecard';
 import RoleChecker from './rolechecker';
+import { Roles } from "../../types/role";
+import { Levels } from "../../types/level";
 
 export default function Roles() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<null | Levels>(null);
   const [filterValue, setFilterValue] = useState(1);
 
   const [roles, setRoles] = useState({});
@@ -18,8 +21,7 @@ export default function Roles() {
       const res = await fetch('/api/roles');
       if (res.status == 200) {
         const json = await res.json();
-        const rolesData = JSON.parse(json);
-        console.log(rolesData);
+        const rolesData: Roles = JSON.parse(json);
         let roles = {};
         for (const n of Object.keys(rolesData)) {
           roles[n] = false;
@@ -38,7 +40,7 @@ export default function Roles() {
     const fetchData = async () => {
       const res = await fetch("/api/levels");
       const json = await res.json();
-      const objectData = JSON.parse(json);
+      const objectData: Levels = JSON.parse(json);
       setData(objectData);
     };
     fetchData();
@@ -70,7 +72,7 @@ export default function Roles() {
         <Grid item xs>
           <Slider
             value={filterValue}
-            onChange={(event, newValue: number) => setFilterValue(newValue)}
+            onChange={(event, newValue: number | number[]) => setFilterValue(newValue as number)}
             min={1}
             max={5}
             step={1}
