@@ -30,8 +30,8 @@ jobs:
         env:
           DOCKER_HUB_REPOSITORY: ecf-explorer-openict
         with:
-          context: ./app
-          file: ./app/Dockerfile.production
+          context: .
+          file: Dockerfile.production
           platforms: linux/amd64
           push: true
           tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
