@@ -2,13 +2,17 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react",
+    "prettier"
   ],
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -17,9 +21,6 @@
     "ecmaVersion": "latest",
     "sourceType": "module",
     "project": "./tsconfig.json"
-  },
-  "settings": {
-    "import/ignore": ["react-native"]
   },
   "rules": {
     "import/no-unresolved": 0,
@@ -34,6 +35,6 @@
     "react/prop-types": 0,
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
-    "module-resolver/use-alias": 2
+    "prettier/prettier": "error"
   }
 }

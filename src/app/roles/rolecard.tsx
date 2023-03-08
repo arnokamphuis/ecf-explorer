@@ -1,65 +1,65 @@
-import { Card} from "@material-ui/core";
-import Tooltip from "@mui/material/Tooltip";
 import "./rolecard.modules.css";
-import { LevelRoleDescription } from "@/types/level";
-import CompetencyDescription  from "./competencyDescription";
-
+import { Phase } from "@/types/competency";
 
 type RoleCardProps = {
-  name: string;
-  level: number;
-  className: string;
-  description: string;
-  indev: LevelRoleDescription['in development'];
-  dev: LevelRoleDescription['developed'];
+	name: string;
+	level: string;
+	className: string;
 };
 
-export default function RoleCard({
-  name,
-  level,
-  description,
-  indev,
-  dev,
-  className,
+type ApiReturn = {
+	name: string;
+	description: string;
+	phase: Phase;
+	activity: string;
+};
+async function getRoleCompetencies(
+	lvl: string,
+	name: string
+): Promise<{ dev: ApiReturn[]; inDev: ApiReturn[] }> {
+	const res = await fetch(
+		`http://localhost:3000/api/role-competence?level=${lvl}&role=${name}`
+	);
+	if (!res.ok) {
+		throw new Error("Failed to fetch data");
+	}
+
+	return JSON.parse(await res.json());
+}
+
+export default async function RoleCard({
+	name,
+	level,
+	className,
 }: RoleCardProps) {
-  return (
-    <Card className={"role " + className} key={name}>
-      <div>
-        <Tooltip
-          title={<div style={{ whiteSpace: "pre-line" }}>{description}</div>}
-          placement="top-end"
-        >
-          <h2 className="text-3xl font-bold underline">
-            {name.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
-              letter.toUpperCase()
-            )}
-          </h2>
-        </Tooltip>
-        <h3 className="text-xl font-bold mt-6 mb-2">REQUIRED AT THIS LEVEL:</h3>
-        {indev
-          ? indev.map((n) => (
-            /* @ts-expect-error Server Component */
-              <CompetencyDescription
-                key={"indev" + n + level}
-                comp={n}
-                lvl={level}
-              />
-            ))
-          : ""}
-        <h3 className="text-xl font-bold mt-6 mb-2">
-          DEVELOPED AT LOWER LEVEL:
-        </h3>
-        {dev
-          ? dev.map((n) => (
-            /* @ts-expect-error Server Component */
-              <CompetencyDescription
-                key={"dev" + n + level}
-                comp={n}
-                lvl={level - 1}
-              />
-            ))
-          : ""}
-      </div>
-    </Card>
-  );
+	const competencies = await getRoleCompetencies(level, name);
+	return (
+		<div className={"role " + className} key={name}>
+			<p className="capitalize">{name}</p>
+			<div>
+				<h3 className="text-xl font-bold mt-6 mb-2">REQUIRED AT THIS LEVEL:</h3>
+				{competencies.inDev.map(competency => (
+					<div key={competency.name}>
+						<p className="ml-4 font-bold">
+							{competency.name}{" "}
+							<span className="text-sx">({competency.phase})</span>:
+						</p>
+						<p className="ml-8 text-sx">{competency.activity} </p>
+					</div>
+				))}
+				<h3 className="text-xl font-bold mt-6 mb-2">
+					DEVELOPED AT LOWER LEVEL:
+				</h3>
+				{competencies.dev.map(competency => (
+					<div key={competency.name}>
+						<p className="ml-4 font-bold">
+							{competency.name}{" "}
+							<span className="text-sx">({competency.phase})</span>:
+						</p>
+						<p className="ml-8 text-sx">{competency.activity} </p>
+					</div>
+				))}
+			</div>
+		</div>
+	);
 }

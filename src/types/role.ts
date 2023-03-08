@@ -1,22 +1,22 @@
 import { Deliverable } from "./deliverable";
 
 export type Roles = {
-    [role: string]: Role;
-}
+	[role: string]: Role;
+};
 
 type Role = {
-    summary: string;
-    mission: string;
-    deliverables: Deliverable;
-    tasks: string[];
-    competencies: RoleCompetency
-}
+	summary: string;
+	mission: string;
+	deliverables: Deliverable;
+	tasks: string[];
+	competencies: RoleCompetency;
+};
 
 type RoleCompetency = {
-    [competency: string]: RoleCompetencyDescription
-}
+	[competency: string]: RoleCompetencyDescription;
+};
 
 type RoleCompetencyDescription = {
-    available: number[];
-    level: number;
-}
+	available: number[];
+	level: number;
+};

@@ -1,17 +1,14 @@
-'use client';
-
-import './globals.css'
+import "./globals.css";
 
 type LayoutProps = {
-  children: React.ReactNode
-}
+	children: React.ReactNode;
+};
 
 export default function Layout({ children }: LayoutProps) {
-    return (
-      <html lang="en">
-        <head></head>
-        <body>
-          {children}
-        </body>
-      </html>)
-  }
+	return (
+		<html lang="en">
+			<head></head>
+			<body>{children}</body>
+		</html>
+	);
+}
