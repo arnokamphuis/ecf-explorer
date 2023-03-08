@@ -1,5 +1,8 @@
 import "./rolecard.modules.css";
-import { Phase } from "@/types/competency";
+import { Competencies, Phase } from "@/types/competency";
+import path from "path";
+import { promises as fs } from "fs";
+import { Roles } from "@/types/role";
 
 type RoleCardProps = {
 	name: string;
@@ -17,14 +20,43 @@ async function getRoleCompetencies(
 	lvl: string,
 	name: string
 ): Promise<{ dev: ApiReturn[]; inDev: ApiReturn[] }> {
-	const res = await fetch(
-		`http://localhost:3000/api/role-competence?level=${lvl}&role=${name}`
+	const jsonDirectory = path.join(process.cwd(), "json");
+	const competencies: Competencies = JSON.parse(
+		await fs.readFile(jsonDirectory + "/competencies.json", "utf8")
 	);
-	if (!res.ok) {
-		throw new Error("Failed to fetch data");
-	}
+	const roles: Roles = JSON.parse(
+		await fs.readFile(jsonDirectory + "/roles.json", "utf8")
+	);
 
-	return JSON.parse(await res.json());
+	const currentRole = roles[name].competencies;
+	const inDevCompetencies = Object.keys(currentRole).filter(r =>
+		currentRole[r].available.includes(Number(lvl))
+	);
+	const devCompetencies = Object.keys(currentRole).filter(r =>
+		currentRole[r].available.includes(Number(lvl) - 1)
+	);
+	const data = {
+		dev: devCompetencies.map(comp => {
+			const filteredData = competencies[comp];
+			return {
+				name: comp,
+				description: filteredData.description,
+				phase: filteredData.phase,
+				activity: filteredData["levels"][lvl],
+			};
+		}),
+		inDev: inDevCompetencies.map(comp => {
+			const filteredData = competencies[comp];
+			return {
+				name: comp,
+				description: filteredData.description,
+				phase: filteredData.phase,
+				activity: filteredData["levels"][lvl],
+			};
+		}),
+	};
+
+	return data;
 }
 
 export default async function RoleCard({
@@ -34,7 +66,7 @@ export default async function RoleCard({
 }: RoleCardProps) {
 	const competencies = await getRoleCompetencies(level, name);
 	return (
-		<div className={"role " + className} key={name}>
+		<div className={"role " + className}>
 			<p className="capitalize">{name}</p>
 			<div>
 				<h3 className="text-xl font-bold mt-6 mb-2">REQUIRED AT THIS LEVEL:</h3>

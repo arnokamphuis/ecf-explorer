@@ -1,6 +1,7 @@
-import {  NextApiResponse } from "next";
+import { NextApiResponse } from "next";
 import path from "path";
 import { promises as fs } from "fs";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 export default async function handler(_, res: NextApiResponse) {
 	const jsonDirectory = path.join(process.cwd(), "json");

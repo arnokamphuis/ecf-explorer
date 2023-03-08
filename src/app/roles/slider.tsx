@@ -7,6 +7,7 @@ export default function Slider() {
 	const { level, changeLevel } = useContext(LevelContext) as LevelContextType;
 	return (
 		<MuiSlider
+			aria-label={"slider"}
 			value={level}
 			onChange={(_, newValue: number | number[]) =>
 				changeLevel(newValue as number)

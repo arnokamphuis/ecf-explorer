@@ -4,27 +4,27 @@ import { Roles } from "../../types/role";
 import { Levels } from "../../types/level";
 import Slider from "./slider";
 import { LvlWrapper, RoleWrapper } from "./wrappers";
+import path from "path";
+import { promises as fs } from "fs";
 
-async function getRoles(): Promise<Array<keyof Roles>> {
-	const res = await fetch("http://localhost:3000/api/roles");
-	if (!res.ok) {
-		throw new Error("Failed to fetch data");
-	}
+const jsonDirectory = path.join(process.cwd(), "json");
+async function getRoles(): Promise<Roles> {
+	const fileContents = await fs.readFile(jsonDirectory + "/roles.json", "utf8");
 
-	return JSON.parse(await res.json());
+	return JSON.parse(fileContents);
 }
 
 async function getLevels(): Promise<Levels> {
-	const res = await fetch("http://localhost:3000/api/levels");
-	if (!res.ok) {
-		throw new Error("Failed to fetch data");
-	}
-
-	return JSON.parse(await res.json());
+	const fileContents = await fs.readFile(
+		jsonDirectory + "/levels.json",
+		"utf8"
+	);
+	return JSON.parse(fileContents);
 }
 
 export default async function Page() {
-	const roles = (await getRoles()) as string[];
+	const roleData = await getRoles();
+	const roles = Object.keys(roleData);
 	const levels = await getLevels();
 	return (
 		<div>
@@ -37,36 +37,32 @@ export default async function Page() {
 				))}
 			</div>
 
-				<div>
-					{Object.keys(levels).map((lvl: string) => {
-						const indevData = levels[lvl]["in development"];
-						const devData = levels[lvl]["developed"];
-						return (
-							<LvlWrapper lvl={Number(lvl)} key={lvl}>
-								<div>
-									{devData.map(item => (
-										<RoleWrapper name={item.name} key={item.name}>
-											{/* @ts-expect-error Server Component */}
-											<RoleCard className="dev" name={item.name} level={lvl} />
-										</RoleWrapper>
-									))}
-								</div>
-								<div>
-									{indevData.map(item => (
-										<RoleWrapper name={item.name} key={item.name}>
-											{/* @ts-expect-error Server Component */}
-											<RoleCard
-												className="indev"
-												name={item.name}
-												level={lvl}
-											/>
-										</RoleWrapper>
-									))}
-								</div>
-							</LvlWrapper>
-						);
-					})}
-				</div>
+			<div>
+				{Object.keys(levels).map((lvl: string) => {
+					const indevData = levels[lvl]["in development"];
+					const devData = levels[lvl]["developed"];
+					return (
+						<LvlWrapper lvl={Number(lvl)} key={lvl}>
+							<div>
+								{devData.map(item => (
+									<RoleWrapper name={item.name} key={item.name}>
+										{/* @ts-expect-error Server Component */}
+										<RoleCard className="dev" name={item.name} level={lvl} />
+									</RoleWrapper>
+								))}
+							</div>
+							<div>
+								{indevData.map(item => (
+									<RoleWrapper name={item.name} key={item.name}>
+										{/* @ts-expect-error Server Component */}
+										<RoleCard className="indev" name={item.name} level={lvl} />
+									</RoleWrapper>
+								))}
+							</div>
+						</LvlWrapper>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
