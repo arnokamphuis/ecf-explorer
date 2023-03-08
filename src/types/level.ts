@@ -5,7 +5,7 @@ export type Levels = {
 export type Level = {
 	developed: LevelRoleDescription[];
 	"in development": LevelRoleDescription[];
-};
+} & Record<string, LevelRoleDescription[]>;
 
 export type LevelRoleDescription = {
 	name: string;
