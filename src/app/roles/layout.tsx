@@ -1,5 +1,5 @@
-import LevelProvider from "./levelProvider";
-import RolesProvider from "./rolesProvider";
+import LevelProvider from "../../components/levelProvider";
+import RolesProvider from "../../components/rolesProvider";
 
 export default async function Layout({
 	children,

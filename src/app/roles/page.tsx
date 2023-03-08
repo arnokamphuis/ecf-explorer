@@ -1,9 +1,9 @@
 import RoleCard from "./rolecard";
-import RoleChecker from "./rolechecker";
+import RoleChecker from "../../components/rolechecker";
 import { Roles } from "../../types/role";
 import { Levels } from "../../types/level";
-import Slider from "./slider";
-import { LvlWrapper, RoleWrapper } from "./wrappers";
+import Slider from "../../components/slider";
+import { LvlWrapper, RoleWrapper } from "../../components/wrappers";
 import path from "path";
 import { promises as fs } from "fs";
 
