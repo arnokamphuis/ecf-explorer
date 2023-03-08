@@ -1,8 +1,8 @@
-import { NextApiResponse } from "next";
+import {  NextApiResponse } from "next";
 import path from "path";
 import { promises as fs } from "fs";
-
-export default async function handler(res: NextApiResponse) {
+// @ts-ignore
+export default async function handler(_, res: NextApiResponse) {
 	const jsonDirectory = path.join(process.cwd(), "json");
 	const fileContents = await fs.readFile(
 		jsonDirectory + "/levels.json",

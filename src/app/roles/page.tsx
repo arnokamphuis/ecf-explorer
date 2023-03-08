@@ -4,7 +4,6 @@ import { Roles } from "../../types/role";
 import { Levels } from "../../types/level";
 import Slider from "./slider";
 import { LvlWrapper, RoleWrapper } from "./wrappers";
-import { Suspense } from "react";
 
 async function getRoles(): Promise<Array<keyof Roles>> {
 	const res = await fetch("http://localhost:3000/api/roles");
@@ -38,7 +37,6 @@ export default async function Page() {
 				))}
 			</div>
 
-			<Suspense fallback={<p>loading...</p>}>
 				<div>
 					{Object.keys(levels).map((lvl: string) => {
 						const indevData = levels[lvl]["in development"];
@@ -69,7 +67,6 @@ export default async function Page() {
 						);
 					})}
 				</div>
-			</Suspense>
 		</div>
 	);
 }
