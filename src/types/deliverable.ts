@@ -1,9 +1,9 @@
 export type Deliverables = {
-    [role: string]: Deliverable;
-}
+	[role: string]: Deliverable;
+};
 
 export type Deliverable = {
-    accountable: string[];
-    responsible: string[];
-    contributor: string[];
-}
+	accountable: string[];
+	responsible: string[];
+	contributor: string[];
+};
