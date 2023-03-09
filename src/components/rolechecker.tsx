@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import Checkbox from "@mui/material/Checkbox";
-import { RolesContext, RolesContextType } from "./rolesProvider";
+import { RolesContext, RolesContextType } from "../context/rolesProvider";
 import { FormControlLabel } from "@mui/material";
 
 type RoleCheckerProps = {
