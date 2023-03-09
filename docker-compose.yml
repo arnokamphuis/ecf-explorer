@@ -1,6 +1,8 @@
 version: "3.9"
 services:
   ecf:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.production
     ports:
       - "3000:3000"
