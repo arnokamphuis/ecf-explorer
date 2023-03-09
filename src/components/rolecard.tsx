@@ -17,7 +17,7 @@ type RoleCardProps = {
 export default function RoleCard({ role }: RoleCardProps) {
 	return (
 		<div className="dark:bg-white p-4 rounded-lg dark:text-black bg-black text-white m-6">
-			<p className="capitalize text-lg font-bold">{role.name}</p>
+			<p className="capitalize text-lg font-bold underline">{role.name}</p>
 			<div>
 				<h3 className="text-xl font-bold mt-6 mb-2">REQUIRED AT THIS LEVEL:</h3>
 				{role["in development"].map(competency => (

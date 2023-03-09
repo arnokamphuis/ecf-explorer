@@ -53,7 +53,7 @@ export default async function Page() {
 	const completeRoles = await getCompleteRoles();
 	return (
 		<div>
-			<p>Level</p>
+			<p className="font-bold text-lg mb-10">Level</p>
 			<Slider />
 
 			<div className="flex flex-row flex-wrap">
@@ -61,6 +61,7 @@ export default async function Page() {
 					<RoleChecker key={name} name={name} />
 				))}
 			</div>
+			<p className="font-bold text-lg mb-6">Roles</p>
 			<RoleFilter allRoles={completeRoles} />
 		</div>
 	);
