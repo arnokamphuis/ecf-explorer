@@ -1,4 +1,3 @@
-import RoleChecker from "@/components/rolechecker";
 import { Roles } from "@/types/role";
 import { Levels } from "@/types/level";
 import Slider from "@/components/slider";
@@ -6,6 +5,7 @@ import path from "path";
 import { promises as fs } from "fs";
 import { Competencies } from "@/types/competency";
 import RoleFilter from "@/components/roleFilter";
+import RoleSelect from "@/components/roleselect";
 
 const jsonDirectory = path.join(process.cwd(), "json");
 async function getRoles(): Promise<Roles> {
@@ -56,12 +56,10 @@ export default async function Page() {
 			<p className="font-bold text-lg mb-10">Level</p>
 			<Slider />
 
-			<div className="flex flex-row flex-wrap">
-				{roles.map(name => (
-					<RoleChecker key={name} name={name} />
-				))}
+			<div className="flex flex-col flex-wrap bg-[#121212] p-4 rounded-lg gap-4 mt-5">
+				<p>Selecteer een of meerdere rollen</p>
+				<RoleSelect roleNames={roles} />
 			</div>
-			<p className="font-bold text-lg mb-6">Roles</p>
 			<RoleFilter allRoles={completeRoles} />
 		</div>
 	);
