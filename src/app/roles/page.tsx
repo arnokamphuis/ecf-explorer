@@ -47,10 +47,22 @@ async function getCompleteRoles() {
 	}));
 }
 
+async function getRolesPerLevel() {
+	const levels: Levels = JSON.parse(
+		await fs.readFile(jsonDirectory + "/levels.json", "utf8")
+	);
+
+	return Object.keys(levels).map(level => [
+		...levels[level].developed.map(role => role.name),
+		...levels[level]["in development"].map(role => role.name),
+	]);
+}
+
 export default async function Page() {
 	const roleData = await getRoles();
 	const roles = Object.keys(roleData);
 	const completeRoles = await getCompleteRoles();
+	const rolesPerLevel = await getRolesPerLevel();
 	return (
 		<div>
 			<p className="font-bold text-lg mb-10">Level</p>
@@ -60,7 +72,7 @@ export default async function Page() {
 				<p>Selecteer een of meerdere rollen</p>
 				<RoleSelect roleNames={roles} />
 			</div>
-			<RoleFilter allRoles={completeRoles} />
+			<RoleFilter allRoles={completeRoles} rolesPerLevel={rolesPerLevel} />
 		</div>
 	);
 }
