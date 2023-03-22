@@ -41,7 +41,12 @@ export default function RoleSelect({ roleNames }: RoleSelectProps) {
 
 	return (
 		<div className="flex lg:flex-row items-center flex-col gap-4 flex-1">
-			<FormControl className="lg:max-w-none  max-w-lg " sx={{minWidth: { sm: 400, md: 600}, width: {xs: '100%', sm: 'auto'}}}>
+			<FormControl
+				className="lg:max-w-none  max-w-lg"
+				sx={{
+					minWidth: { sm: 400, md: 600 },
+					width: { xs: "100%", sm: "auto" },
+				}}>
 				<InputLabel id="multi-select">Rollen</InputLabel>
 				<Select
 					labelId="multi-select"
@@ -76,22 +81,26 @@ export default function RoleSelect({ roleNames }: RoleSelectProps) {
 					))}
 				</Select>
 			</FormControl>
-			{roles.length > 0 && <Button
-				onClick={() => {
-					setAllRoles([]);
-				}}
-				variant="outlined"
-				className="min-w-fit">
-				Verwijder alle
-			</Button>}
-			{roles.length !== roleNames.length && <Button
-				onClick={() => {
-					setAllRoles(roleNames);
-				}}
-				variant="outlined"
-				className="min-w-fit">
-				Selecteer alle
-			</Button>}
+			{roles.length > 0 && (
+				<Button
+					onClick={() => {
+						setAllRoles([]);
+					}}
+					variant="outlined"
+					className="min-w-fit">
+					Verwijder alle
+				</Button>
+			)}
+			{roles.length !== roleNames.length && (
+				<Button
+					onClick={() => {
+						setAllRoles(roleNames);
+					}}
+					variant="outlined"
+					className="min-w-fit">
+					Selecteer alle
+				</Button>
+			)}
 		</div>
 	);
 }

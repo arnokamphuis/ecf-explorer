@@ -8,6 +8,12 @@ import RoleFilter from "@/components/roleFilter";
 import RoleSelect from "@/components/roleselect";
 
 const jsonDirectory = path.join(process.cwd(), "json");
+async function getLevels() {
+	const levels: Levels = JSON.parse(
+		await fs.readFile(jsonDirectory + "/levels.json", "utf8")
+	);
+	return levels;
+}
 async function getRoles(): Promise<Roles> {
 	const fileContents = await fs.readFile(jsonDirectory + "/roles.json", "utf8");
 
@@ -15,9 +21,7 @@ async function getRoles(): Promise<Roles> {
 }
 
 async function getCompleteRoles() {
-	const levels: Levels = JSON.parse(
-		await fs.readFile(jsonDirectory + "/levels.json", "utf8")
-	);
+	const levels = await getLevels();
 	const competencies: Competencies = JSON.parse(
 		await fs.readFile(jsonDirectory + "/competencies.json", "utf8")
 	);
@@ -48,9 +52,7 @@ async function getCompleteRoles() {
 }
 
 async function getRolesPerLevel() {
-	const levels: Levels = JSON.parse(
-		await fs.readFile(jsonDirectory + "/levels.json", "utf8")
-	);
+	const levels = await getLevels();
 
 	return Object.keys(levels).map(level => [
 		...levels[level].developed.map(role => role.name),
