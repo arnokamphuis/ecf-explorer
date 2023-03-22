@@ -6,6 +6,7 @@ export type RolesContextType = {
 	roles: string[];
 	addRole: (role: string) => void;
 	removeRole: (role: string) => void;
+	setAllRoles: (roles: string[]) => void;
 };
 
 export const RolesContext = createContext<RolesContextType | null>(null);
@@ -24,8 +25,11 @@ export default function RolesProvider({
 		const newRoles = [...roles].filter(r => r !== role);
 		setRoles(newRoles);
 	};
+	const setAllRoles = (roleArray: string[]) => {
+		setRoles(roleArray);
+	};
 	return (
-		<RolesContext.Provider value={{ roles, addRole, removeRole }}>
+		<RolesContext.Provider value={{ roles, addRole, removeRole, setAllRoles }}>
 			{children}
 		</RolesContext.Provider>
 	);

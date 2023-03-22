@@ -1,4 +1,3 @@
-import RoleChecker from "@/components/rolechecker";
 import { Roles } from "@/types/role";
 import { Levels } from "@/types/level";
 import Slider from "@/components/slider";
@@ -6,8 +5,15 @@ import path from "path";
 import { promises as fs } from "fs";
 import { Competencies } from "@/types/competency";
 import RoleFilter from "@/components/roleFilter";
+import RoleSelect from "@/components/roleselect";
 
 const jsonDirectory = path.join(process.cwd(), "json");
+async function getLevels() {
+	const levels: Levels = JSON.parse(
+		await fs.readFile(jsonDirectory + "/levels.json", "utf8")
+	);
+	return levels;
+}
 async function getRoles(): Promise<Roles> {
 	const fileContents = await fs.readFile(jsonDirectory + "/roles.json", "utf8");
 
@@ -15,9 +21,7 @@ async function getRoles(): Promise<Roles> {
 }
 
 async function getCompleteRoles() {
-	const levels: Levels = JSON.parse(
-		await fs.readFile(jsonDirectory + "/levels.json", "utf8")
-	);
+	const levels = await getLevels();
 	const competencies: Competencies = JSON.parse(
 		await fs.readFile(jsonDirectory + "/competencies.json", "utf8")
 	);
@@ -47,22 +51,30 @@ async function getCompleteRoles() {
 	}));
 }
 
+async function getRolesPerLevel() {
+	const levels = await getLevels();
+
+	return Object.keys(levels).map(level => [
+		...levels[level].developed.map(role => role.name),
+		...levels[level]["in development"].map(role => role.name),
+	]);
+}
+
 export default async function Page() {
 	const roleData = await getRoles();
 	const roles = Object.keys(roleData);
 	const completeRoles = await getCompleteRoles();
+	const rolesPerLevel = await getRolesPerLevel();
 	return (
 		<div>
 			<p className="font-bold text-lg mb-10">Level</p>
 			<Slider />
 
-			<div className="flex flex-row flex-wrap">
-				{roles.map(name => (
-					<RoleChecker key={name} name={name} />
-				))}
+			<div className="flex flex-col flex-wrap bg-[#121212] p-4 rounded-lg gap-4 mt-5">
+				<p>Selecteer een of meerdere rollen</p>
+				<RoleSelect roleNames={roles} />
 			</div>
-			<p className="font-bold text-lg mb-6">Roles</p>
-			<RoleFilter allRoles={completeRoles} />
+			<RoleFilter allRoles={completeRoles} rolesPerLevel={rolesPerLevel} />
 		</div>
 	);
 }
