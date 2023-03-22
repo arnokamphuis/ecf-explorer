@@ -11,11 +11,11 @@ async function getRole(role: string) {
 	if (roles[role]) {
 		return roles[role];
 	}
-	throw new Error("Role doesnt exist");
+	return null;
 }
 
 export default async function RolePage({
-	params = { role: "developer" },
+	params = { role: "" },
 }: {
 	params: { role: string };
 }) {
