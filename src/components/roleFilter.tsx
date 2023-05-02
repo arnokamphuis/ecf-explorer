@@ -3,33 +3,20 @@
 import RoleCard from "@/components/rolecard";
 import Button from "@mui/material/Button";
 import { useContext, useMemo } from "react";
-import { LevelContext, LevelContextType } from "../context/levelProvider";
-import { RolesContext, RolesContextType } from "../context/rolesProvider";
+import { LevelContext, LevelContextType } from "@/context/levelProvider";
+import { RolesContext, RolesContextType } from "@/context/rolesProvider";
+
+type CompetenceInfo = { name: string; activity: string };
+type RoleInfo = {
+	developed: CompetenceInfo[];
+	"in development": CompetenceInfo[];
+	name: string;
+};
 
 type RoleFilterProps = {
 	allRoles: {
-		developed: {
-			developed: {
-				name: string;
-				activity: string;
-			}[];
-			"in development": {
-				name: string;
-				activity: string;
-			}[];
-			name: string;
-		}[];
-		"in development": {
-			developed: {
-				name: string;
-				activity: string;
-			}[];
-			"in development": {
-				name: string;
-				activity: string;
-			}[];
-			name: string;
-		}[];
+		developed: RoleInfo[];
+		"in development": RoleInfo[];
 	}[];
 	rolesPerLevel: string[][];
 };
@@ -81,13 +68,15 @@ export default function RoleFilter({
 		);
 	}
 	return (
-		<div className="flex lg:flex-row flex-col flex-2">
+		<div className="flex lg:flex-row flex-col flex-2 mt-4">
 			<div className="flex-1">
+				<h2>Ontwikkeld</h2>
 				{filteredDevRoles.map(role => (
 					<RoleCard role={role} key={role.name} />
 				))}
 			</div>
 			<div className="flex-1">
+				<h2>In ontwikkeling</h2>
 				{filteredInDevRoles.map(role => (
 					<RoleCard role={role} key={role.name} />
 				))}

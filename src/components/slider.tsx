@@ -1,7 +1,7 @@
 "use client";
 import { Slider as MuiSlider } from "@mui/material";
 import { useContext } from "react";
-import { LevelContext, LevelContextType } from "../context/levelProvider";
+import { LevelContext, LevelContextType } from "@/context/levelProvider";
 
 const marks = [
 	{
