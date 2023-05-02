@@ -11,10 +11,15 @@ export default function Layout({ children }: LayoutProps) {
 			<head></head>
 			<body className="dark:bg-black dark:text-white text-black bg-white">
 				<nav className="bg-[#121212] h-20 flex flex-row items-center px-4 justify-between shadow-sm">
-					<p className="font-bold text-xl">Ecf-explorer</p>
-					<div className="flex items-center">
+					<Link className="font-bold text-xl" href="/">
+						Ecf-explorer
+					</Link>
+					<div className="flex items-center gap-2">
 						<Link href="/roles" className="font-bold">
 							Rollen
+						</Link>
+						<Link href="/competences" className="font-bold">
+							Competenties
 						</Link>
 					</div>
 				</nav>
