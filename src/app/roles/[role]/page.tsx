@@ -1,18 +1,15 @@
-import path from "path";
-import { promises as fs } from "fs";
-import { Roles } from "@/types/role";
 import { Deliverable } from "@/types/deliverable";
+import { cache } from "react";
+import { getRoles } from "@/utils/getRoles";
+import { notFound } from "next/navigation";
 
-async function getRole(role: string) {
-	const jsonDirectory = path.join(process.cwd(), "json");
-	const roles: Roles = JSON.parse(
-		await fs.readFile(jsonDirectory + "/roles.json", "utf8")
-	);
-	if (roles[role]) {
-		return roles[role];
+const getRole = cache(async (role: string) => {
+	const roles = await getRoles();
+	if (!roles[role]) {
+		notFound();
 	}
-	return null;
-}
+	return roles[role];
+});
 
 export default async function RolePage({
 	params = { role: "" },
@@ -22,7 +19,6 @@ export default async function RolePage({
 	const { role } = params;
 	const formatRole = role.replaceAll("-", " ");
 	const roleData = await getRole(formatRole);
-	if (!roleData) return null;
 	return (
 		<div className="flex justify-center items-center flex-col flex-1">
 			<div className="flex gap-4 flex-col bg-[#121212] p-10 max-w-xl">
