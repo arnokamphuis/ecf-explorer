@@ -2,6 +2,7 @@ import { Deliverable } from "@/types/deliverable";
 import { cache } from "react";
 import { getRoles } from "@/utils/getRoles";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 const getRole = cache(async (role: string) => {
 	const roles = await getRoles();
@@ -57,6 +58,18 @@ export default async function RolePage({
 							</li>
 						))}
 					</ul>
+				</div>
+				<div>
+					<p>Competences</p>
+					<div className="flex flex-col">
+						{Object.keys(roleData.competencies).map(comp => (
+							<Link
+								key={comp}
+								href={`/competences/${comp.replaceAll(" ", "-")}`}>
+								{comp}
+							</Link>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
