@@ -1,5 +1,6 @@
 import { getCompetences } from "@/utils/getCompetences";
 import { getRoles } from "@/utils/getRoles";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 async function getCompetence(competence: string) {
@@ -35,11 +36,16 @@ export default async function Competencepage({
 			<div>
 				<p>{formatCompetence}</p>
 				<p>{competenceData.description}</p>
-				{competenceRoles.map(role => (
-					<p key={role} className="capitalize">
-						{role}
-					</p>
-				))}
+				<div className="flex flex-col">
+					{competenceRoles.map(role => (
+						<Link
+							key={role}
+							className="capitalize"
+							href={`/roles/${role.replaceAll(" ", "-")}`}>
+							{role}
+						</Link>
+					))}
+				</div>
 			</div>
 		</div>
 	);
