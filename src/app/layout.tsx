@@ -5,10 +5,17 @@ type LayoutProps = {
 	children: React.ReactNode;
 };
 
+export const metadata = {
+	title: "e-Competence Framework",
+	description: "eCF browser",
+	icons: {
+		icon: "/favicon.ico",
+	},
+};
+
 export default function Layout({ children }: LayoutProps) {
 	return (
 		<html lang="en">
-			<head></head>
 			<body className="dark:bg-black dark:text-white text-black bg-white">
 				<nav className="bg-[#121212] h-20 flex flex-row items-center px-4 justify-between shadow-sm">
 					<Link className="font-bold text-xl" href="/">
