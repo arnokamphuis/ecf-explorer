@@ -1,4 +1,5 @@
 import { getCompetences } from "@/utils/getCompetences";
+import { getHboICompetenceLinks } from "@/utils/getHboICompetenceLinks";
 import { getRoles } from "@/utils/getRoles";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -21,22 +22,41 @@ async function getCompetenceRoles(competence: string) {
 	);
 }
 
+async function getCompetenceHboI(competence: string) {
+	const links = await getHboICompetenceLinks();
+
+	return links[competence];
+}
+
 export default async function Competencepage({
 	params: { competence = "" },
 }: {
 	params: { competence: string };
 }) {
 	const formatCompetence = competence.replaceAll("-", " ");
-	const [competenceRoles, competenceData] = await Promise.all([
+	const [competenceRoles, competenceData, hboiLinks] = await Promise.all([
 		getCompetenceRoles(formatCompetence),
 		getCompetence(formatCompetence),
+		getCompetenceHboI(formatCompetence),
 	]);
 	return (
 		<div className="flex flex-1 items-center justify-center">
-			<div>
-				<p>{formatCompetence}</p>
-				<p>{competenceData.description}</p>
+			<div className="flex flex-col gap-4 max-w-xl card">
+				<h1>{formatCompetence}</h1>
+				<div>
+					<h2>Role summary</h2>
+					<p>{competenceData.description}</p>
+				</div>
+				<div>
+					<h2>Levels</h2>
+					{Object.keys(competenceData.levels).map(level => (
+						<p key={level}>
+							{level}: {competenceData.levels[level]}
+						</p>
+					))}
+				</div>
 				<div className="flex flex-col">
+					<h2>Roles</h2>
 					{competenceRoles.map(role => (
 						<Link
 							key={role}
@@ -46,6 +66,16 @@ export default async function Competencepage({
 						</Link>
 					))}
 				</div>
+				{hboiLinks && Object.keys(hboiLinks).length > 0 && (
+					<div>
+						<h2>HBO-i Beroepstaken</h2>
+						{Object.keys(hboiLinks).map(link => (
+							<p key={link}>
+								{link}: {hboiLinks[link].join(", ")}
+							</p>
+						))}
+					</div>
+				)}
 			</div>
 		</div>
 	);
