@@ -32,9 +32,7 @@ export default function Slider() {
 		<MuiSlider
 			aria-label={"slider"}
 			value={level}
-			onChange={(_, newValue: number | number[]) =>
-				changeLevel(newValue as number)
-			}
+			onChange={(_, newValue) => changeLevel(newValue as number)}
 			min={1}
 			max={5}
 			step={1}
