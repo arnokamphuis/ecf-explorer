@@ -16,17 +16,17 @@ export const metadata = {
 export default function Layout({ children }: LayoutProps) {
 	return (
 		<html lang="en">
-			<body className="dark:bg-black dark:text-white text-black bg-white">
+			<body className="dark:bg-black dark:text-white text-black bg-gray-100">
 				<nav className="bg-[#121212] h-20 flex flex-row items-center px-4 justify-between shadow-sm">
-					<Link className="font-bold text-xl" href="/">
+					<Link className="font-bold text-2xl no-underline" href="/">
 						Ecf-explorer
 					</Link>
-					<div className="flex items-center gap-2">
+					<div className="flex items-center gap-4">
 						<Link href="/roles" className="font-bold">
-							Rollen
+							Roles
 						</Link>
 						<Link href="/competences" className="font-bold">
-							Competenties
+							Competences
 						</Link>
 					</div>
 				</nav>
