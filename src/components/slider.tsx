@@ -1,7 +1,7 @@
 "use client";
 import { Slider as MuiSlider } from "@mui/material";
 import { useContext } from "react";
-import { LevelContext, LevelContextType } from "../context/levelProvider";
+import { LevelContext, LevelContextType } from "@/context/levelProvider";
 
 const marks = [
 	{
@@ -32,9 +32,7 @@ export default function Slider() {
 		<MuiSlider
 			aria-label={"slider"}
 			value={level}
-			onChange={(_, newValue: number | number[]) =>
-				changeLevel(newValue as number)
-			}
+			onChange={(_, newValue) => changeLevel(newValue as number)}
 			min={1}
 			max={5}
 			step={1}

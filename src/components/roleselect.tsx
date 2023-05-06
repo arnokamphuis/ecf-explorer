@@ -47,7 +47,7 @@ export default function RoleSelect({ roleNames }: RoleSelectProps) {
 					minWidth: { sm: 400, md: 600 },
 					width: { xs: "100%", sm: "auto" },
 				}}>
-				<InputLabel id="multi-select">Rollen</InputLabel>
+				<InputLabel id="multi-select">Roles</InputLabel>
 				<Select
 					labelId="multi-select"
 					id="multi-select"
@@ -81,26 +81,28 @@ export default function RoleSelect({ roleNames }: RoleSelectProps) {
 					))}
 				</Select>
 			</FormControl>
-			{roles.length > 0 && (
-				<Button
-					onClick={() => {
-						setAllRoles([]);
-					}}
-					variant="outlined"
-					className="min-w-fit">
-					Verwijder alle
-				</Button>
-			)}
-			{roles.length !== roleNames.length && (
-				<Button
-					onClick={() => {
-						setAllRoles(roleNames);
-					}}
-					variant="outlined"
-					className="min-w-fit">
-					Selecteer alle
-				</Button>
-			)}
+			<div className="flex gap-2">
+				{roles.length > 0 && (
+					<Button
+						onClick={() => {
+							setAllRoles([]);
+						}}
+						variant="outlined"
+						className="min-w-fit">
+						Remove all
+					</Button>
+				)}
+				{roles.length !== roleNames.length && (
+					<Button
+						onClick={() => {
+							setAllRoles(roleNames);
+						}}
+						variant="outlined"
+						className="min-w-fit">
+						Select all
+					</Button>
+				)}
+			</div>
 		</div>
 	);
 }

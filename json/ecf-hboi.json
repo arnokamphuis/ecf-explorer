@@ -1,0 +1,210 @@
+{
+    "A.1. IS and Business Strategy Alignment": {},
+    "A.2. Service Level Management": {},
+    "A.3. Business Plan Development": {},
+    "A.4. Product / Service Planning": {},
+    "A.5. Architecture Design": {},
+    "A.6. Application Design": {
+        "GAN": [
+            "BA",
+            "FE"
+        ],
+        "GON": [
+            "BA",
+            "FE"
+        ],
+        "IAN": [
+            "CSC",
+            "BE",
+            "BA"
+        ],
+        "ION": [
+            "CSC",
+            "BE"
+        ],
+        "SAN": [
+            "BA",
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "SON": [
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "HAN": [
+            "BA",
+            "EE"
+        ],
+        "HON": [
+            "EE"
+        ]
+    },
+    "A.7. Technology Trend Monitoring": {},
+    "A.8. Sustainability Management": {},
+    "A.9. Innovating": {},
+    "A.10. User Experience": {},
+    "B.1. Application Development": {
+        "GRE": [
+            "FE"
+        ],
+        "PRE": [
+            "BA"
+        ],
+        "IRE": [
+            "CSC",
+            "BE"
+        ],
+        "SRE": [
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "HRE": [
+            "EE"
+        ]
+    },
+    "B.2. Component Integration": {},
+    "B.3. Testing": {
+        "GRE": [
+            "BA",
+            "FE"
+        ],
+        "PRE": [
+            "BA"
+        ],
+        "IRE": [
+            "CSC",
+            "BE"
+        ],
+        "SRE": [
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "HRE": [
+            "EE"
+        ]
+    },
+    "B.4. Solution Deployment": {
+        "IRE": [
+            "CSC",
+            "BE"
+        ],
+        "IMC": [
+            "CSC",
+            "BE"
+        ],
+        "SRE": [
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ]
+    },
+    "B.5. Documentation Production": {
+        "GAN": [
+            "BA",
+            "FE"
+        ],
+        "GON": [
+            "BA",
+            "FE"
+        ],
+        "GMC": [
+            "BA",
+            "FE"
+        ],
+        "PAN": [
+            "BA"
+        ],
+        "PON": [
+            "BA"
+        ],
+        "PMC": [
+            "BA"
+        ],
+        "IAN": [
+            "CSC",
+            "BA",
+            "BE"
+        ],
+        "ION": [
+            "CSC",
+            "BE"
+        ],
+        "IMC": [
+            "CSC",
+            "BE",
+            "BA"
+        ],
+        "SAN": [
+            "BA",
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "SON": [
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "SMC": [
+            "AI",
+            "FE",
+            "BE",
+            "EE"
+        ],
+        "HAN": [
+            "BA",
+            "EE"
+        ],
+        "HON": [
+            "EE"
+        ],
+        "HMC": [
+            "EE"
+        ]
+    },
+    "B.6. ICT Systems Engineering": {},
+    "C.1. User Support": {},
+    "C.2. Change Support": {},
+    "C.3. Service Delivery": {
+        "IMC": [
+            "CSC",
+            "BE"
+        ],
+        "SMC": [
+            "BA"
+        ]
+    },
+    "C.4. Problem Management": {},
+    "C.5. Systems Management": {},
+    "D.1. Information Security Strategy Development": {},
+    "D.2. ICT Quality Strategy Development": {},
+    "D.3. Education and Training Provision": {},
+    "D.4. Purchasing": {},
+    "D.5. Sales Development": {},
+    "D.6. Digital Marketing": {},
+    "D.7. Data Science and Analytics": {},
+    "D.8. Contract Management": {},
+    "D.9. Personnel Development": {},
+    "D.10. Information and Knowledge Management": {},
+    "D.11. Needs Identification": {},
+    "E.1. Forecast Development": {},
+    "E.2. Project and Portfolio Management": {},
+    "E.3. Risk Management": {},
+    "E.4. Relationship Management": {},
+    "E.5. Process Improvement": {},
+    "E.6. ICT Quality Management": {},
+    "E.7. Business Change Management": {},
+    "E.8. Information Security Management": {},
+    "E.9. Information Systems Governance": {}
+}
