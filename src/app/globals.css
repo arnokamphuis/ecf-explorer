@@ -88,3 +88,18 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+	@apply text-xl font-bold
+}
+
+h2{
+	@apply text-lg font-semibold
+}
+
+.card{
+	@apply dark:bg-[#121212] p-4 rounded-lg bg-white
+}
+a{
+	@apply hover:underline
+ }
