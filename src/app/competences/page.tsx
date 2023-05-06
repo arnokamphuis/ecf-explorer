@@ -25,21 +25,24 @@ export default async function Competencespage() {
 	});
 
 	return (
-		<div className="flex flex-col flex-wrap h-[80vh]">
-			{phaseSections.map(section => (
-				<div key={section.title}>
-					<p>{section.title}</p>
-					<div className="flex flex-col">
-						{section.data.map(comp => (
-							<Link
-								href={`/competences/${comp.replaceAll(" ", "-")}`}
-								key={comp}>
-								{comp}
-							</Link>
-						))}
+		<>
+			<h1 className="mb-4">Competences</h1>
+			<div className="flex flex-row flex-wrap gap-4 card md:justify-evenly">
+				{phaseSections.map(section => (
+					<div key={section.title} className="">
+						<h2>{section.title}</h2>
+						<div className="flex flex-col">
+							{section.data.map(comp => (
+								<Link
+									href={`/competences/${comp.replaceAll(" ", "-")}`}
+									key={comp}>
+									{comp}
+								</Link>
+							))}
+						</div>
 					</div>
-				</div>
-			))}
-		</div>
+				))}
+			</div>
+		</>
 	);
 }
