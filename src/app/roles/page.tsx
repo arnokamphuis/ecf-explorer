@@ -61,7 +61,7 @@ export default async function Page() {
 			<Slider />
 
 			<div className="flex flex-col flex-wrap bg-[#121212] p-4 rounded-lg gap-4 mt-5">
-				<p>Selecteer een of meerdere rollen</p>
+				<p>Select role(s)</p>
 				<RoleSelect roleNames={roleNames} />
 			</div>
 			<RoleFilter allRoles={completeRoles} rolesPerLevel={rolesPerLevel} />
