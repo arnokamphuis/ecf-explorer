@@ -9,8 +9,8 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Chip from "@mui/material/Chip";
-import Button from "@mui/material/Button";
 import { Checkbox, ListItemText } from "@mui/material";
+import { Button } from "./ui/button";
 
 const ITEM_HEIGHT = 80;
 const ITEM_PADDING_TOP = 8;
@@ -87,8 +87,7 @@ export default function RoleSelect({ roleNames }: RoleSelectProps) {
 						onClick={() => {
 							setAllRoles([]);
 						}}
-						variant="outlined"
-						className="min-w-fit">
+						className="min-w-max">
 						Remove all
 					</Button>
 				)}
@@ -97,7 +96,6 @@ export default function RoleSelect({ roleNames }: RoleSelectProps) {
 						onClick={() => {
 							setAllRoles(roleNames);
 						}}
-						variant="outlined"
 						className="min-w-fit">
 						Select all
 					</Button>

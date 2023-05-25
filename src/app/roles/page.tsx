@@ -57,10 +57,7 @@ export default async function Page() {
 
 	return (
 		<div>
-			<p className="font-bold text-lg mb-10">Level</p>
-			<Slider />
-
-			<div className="flex flex-col flex-wrap bg-[#121212] p-4 rounded-lg gap-4 mt-5">
+			<div className="flex flex-col flex-wrap dark:bg-[#121212] p-4 rounded-lg gap-4 mt-5">
 				<p>Select role(s)</p>
 				<RoleSelect roleNames={roleNames} />
 			</div>
