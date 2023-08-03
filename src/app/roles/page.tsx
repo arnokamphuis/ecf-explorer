@@ -1,4 +1,3 @@
-import Slider from "@/components/slider";
 import RoleFilter from "@/components/roleFilter";
 import RoleSelect from "@/components/roleselect";
 import { getLevels } from "@/utils/getLevels";
