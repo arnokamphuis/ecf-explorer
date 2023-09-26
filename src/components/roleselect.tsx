@@ -1,105 +1,116 @@
 "use client";
 
 import { RolesContext, RolesContextType } from "@/context/rolesProvider";
-import { useContext } from "react";
-import Box from "@mui/material/Box";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
-import Chip from "@mui/material/Chip";
-import Button from "@mui/material/Button";
-import { Checkbox, ListItemText } from "@mui/material";
-
-const ITEM_HEIGHT = 80;
-const ITEM_PADDING_TOP = 8;
-const MenuProps = {
-	PaperProps: {
-		style: {
-			maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-			width: 250,
-		},
-	},
-};
+import { useContext, useState } from "react";
+import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
+import { ChevronsUpDown, Check, X } from "lucide-react";
+import { PopoverTrigger, PopoverContent, Popover } from "./ui/popover";
+import { Badge } from "./ui/badge";
+import {
+	Command,
+	CommandEmpty,
+	CommandGroup,
+	CommandInput,
+	CommandItem,
+	CommandSeparator,
+} from "./ui/command";
 
 type RoleSelectProps = { roleNames: string[] };
 export default function RoleSelect({ roleNames }: RoleSelectProps) {
-	const { roles, setAllRoles, removeRole } = useContext(
+	const { roles, setAllRoles, removeRole, addRole } = useContext(
 		RolesContext
 	) as RolesContextType;
-
-	const handleChange = (event: SelectChangeEvent<typeof roles>) => {
-		const {
-			target: { value },
-		} = event;
-		setAllRoles(
-			// On autofill we get a stringified value.
-			typeof value === "string" ? value.split(",") : value
-		);
-	};
+	const [open, setOpen] = useState(false);
 
 	return (
 		<div className="flex lg:flex-row items-center flex-col gap-4 flex-1">
-			<FormControl
-				className="lg:max-w-none  max-w-lg"
-				sx={{
-					minWidth: { sm: 400, md: 600 },
-					width: { xs: "100%", sm: "auto" },
-				}}>
-				<InputLabel id="multi-select">Roles</InputLabel>
-				<Select
-					labelId="multi-select"
-					id="multi-select"
-					multiple
-					value={roles}
-					onChange={handleChange}
-					input={<OutlinedInput id="select-multiple-chip" label="Chip" />}
-					renderValue={() => (
-						<Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-							{roles.map(value => (
-								<Chip
-									key={value}
-									label={value}
-									className="capitalize text-sm"
-									onDelete={() => {
-										removeRole(value);
-									}}
-									onMouseDown={e => {
-										e.stopPropagation();
-									}}
-								/>
+			<Popover open={open} onOpenChange={state => setOpen(state)}>
+				<PopoverTrigger asChild>
+					<Button
+						variant="outline"
+						role="combobox"
+						aria-expanded={open}
+						className="min-w-[200px] justify-between">
+						Select role...
+						<ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+					</Button>
+				</PopoverTrigger>
+				<PopoverContent className="w-[200px] p-0">
+					<Command>
+						<CommandInput placeholder="Search by role" />
+						<CommandEmpty>No role found.</CommandEmpty>
+						<CommandGroup className="h-[500px] overflow-y-auto">
+							<CommandItem
+								className="cursor-pointer"
+								value="0"
+								onSelect={() => {
+									if (roles.length === roleNames.length) {
+										setAllRoles([]);
+									} else {
+										setAllRoles(roleNames);
+									}
+								}}>
+								<Check
+									className={cn(
+										"mr-2 h-4 w-4",
+										roles.length === roleNames.length
+											? "opacity-100"
+											: "opacity-0"
+									)}
+								/>{" "}
+								Select all
+							</CommandItem>
+							<CommandSeparator className="my-2" />
+							{roleNames.map(roleName => (
+								<CommandItem
+									value={roleName}
+									key={roleName}
+									className="capitalize cursor-pointer"
+									onSelect={currentValue => {
+										if (roles.includes(currentValue)) {
+											removeRole(roleName);
+										} else {
+											addRole(roleName);
+										}
+									}}>
+									<Check
+										className={cn(
+											"mr-2 h-4 w-4",
+											roles.includes(roleName) ? "opacity-100" : "opacity-0"
+										)}
+									/>
+									{roleName}
+								</CommandItem>
 							))}
-						</Box>
-					)}
-					MenuProps={MenuProps}>
-					{roleNames.map(role => (
-						<MenuItem key={role} value={role} className="capitalize">
-							<ListItemText>{role}</ListItemText>
-							<Checkbox checked={roles.includes(role)} />
-						</MenuItem>
-					))}
-				</Select>
-			</FormControl>
+						</CommandGroup>
+					</Command>
+				</PopoverContent>
+			</Popover>
+
+			<div className="flex flex-row flex-wrap gap-2">
+				{roles.map(role => (
+					<Badge
+						tabIndex={0}
+						role={"button"}
+						className="capitalize cursor-pointer p-2"
+						key={role}
+						onClick={() => {
+							removeRole(role);
+						}}>
+						{role}
+						<X className="ml-2 h-4 w-4 shrink-0" />
+					</Badge>
+				))}
+			</div>
 			<div className="flex gap-2">
 				{roles.length > 0 && (
 					<Button
 						onClick={() => {
 							setAllRoles([]);
 						}}
-						variant="outlined"
-						className="min-w-fit">
+						className="min-w-max">
 						Remove all
-					</Button>
-				)}
-				{roles.length !== roleNames.length && (
-					<Button
-						onClick={() => {
-							setAllRoles(roleNames);
-						}}
-						variant="outlined"
-						className="min-w-fit">
-						Select all
 					</Button>
 				)}
 			</div>

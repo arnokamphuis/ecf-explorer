@@ -51,10 +51,9 @@ export default async function Competencepage({
 	return (
 		<div className="flex flex-1 items-center justify-center">
 			<div className="flex flex-col gap-4 max-w-xl card">
-				<h1>{formatCompetence}</h1>
 				<div>
-					<h2>Role summary</h2>
-					<p>{competenceData.description}</p>
+					<h1>{formatCompetence}</h1>
+					<p className="lead">{competenceData.description}</p>
 				</div>
 				<div>
 					<h2>Levels</h2>

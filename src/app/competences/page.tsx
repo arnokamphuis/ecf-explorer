@@ -6,6 +6,17 @@ type Section = {
 	data: string[];
 };
 
+const phases: Record<string, string> = {
+	Plan: "This competence area includes the (strategic) preparatory work within the ICT domain.",
+	Build:
+		"This competence area covers the development and implementation of products, services or solutions.",
+	Run: "This competence area is about the delivery, support and maintenance of products, services and solutions provided.",
+	Enable:
+		"This competence area addresses (strategic) support activities in the ICT domain.",
+	Manage:
+		"This competence area concerns about managing and improving the ICT domain.",
+};
+
 export default async function Competencespage() {
 	const competences = await getCompetences();
 
@@ -31,6 +42,7 @@ export default async function Competencespage() {
 				{phaseSections.map(section => (
 					<div key={section.title} className="">
 						<h2>{section.title}</h2>
+						<p className="w-60">{phases[section.title]}</p>
 						<div className="flex flex-col">
 							{section.data.map(comp => (
 								<Link

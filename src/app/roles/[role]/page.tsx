@@ -3,6 +3,7 @@ import { cache } from "react";
 import { getRoles } from "@/utils/getRoles";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { Card } from "@/components/ui/card";
 
 const getRole = cache(async (role: string) => {
 	const roles = await getRoles();
@@ -22,12 +23,13 @@ export default async function RolePage({
 	const roleData = await getRole(formatRole);
 	return (
 		<div className="flex justify-center items-center flex-col flex-1">
-			<div className="flex gap-4 flex-col card max-w-xl">
-				<h1 className="capitalize">{formatRole}</h1>
+			<Card className="flex gap-4 flex-col max-w-xl p-4">
 				<div>
-					<h2>Summary</h2>
-					<p>{roleData.summary}</p>
+					<h1 className="capitalize">{formatRole}</h1>
+
+					<p className="lead">{roleData.summary}</p>
 				</div>
+
 				<div>
 					<h2>Mission</h2>
 					<p>{roleData.mission}</p>
@@ -71,7 +73,7 @@ export default async function RolePage({
 						))}
 					</div>
 				</div>
-			</div>
+			</Card>
 		</div>
 	);
 }

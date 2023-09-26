@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "@/components/themeSwitcher";
 import Link from "next/link";
 import "./globals.css";
 
@@ -16,10 +17,10 @@ export const metadata = {
 export default function Layout({ children }: LayoutProps) {
 	return (
 		<html lang="en">
-			<body className="dark:bg-black dark:text-white text-black bg-gray-100">
-				<nav className="bg-[#121212] h-20 flex flex-row items-center px-4 justify-between shadow-sm">
-					<Link className="font-bold text-2xl no-underline" href="/">
-						Ecf-explorer
+			<body className="bg-slate-100 dark:bg-black">
+				<nav className="dark:bg-[#121212] h-16 flex flex-row items-center px-4 justify-between shadow-sm bg-white">
+					<Link className="font-bold text-xl no-underline" href="/">
+						eCF-explorer
 					</Link>
 					<div className="flex items-center gap-4">
 						<Link href="/roles" className="font-bold">
@@ -28,6 +29,7 @@ export default function Layout({ children }: LayoutProps) {
 						<Link href="/competences" className="font-bold">
 							Competences
 						</Link>
+						<ThemeSwitcher />
 					</div>
 				</nav>
 				<div className="p-5">{children}</div>

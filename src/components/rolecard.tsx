@@ -1,6 +1,7 @@
 "use client";
 
-import { LaunchOutlined } from "@mui/icons-material";
+import clsx from "clsx";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 type RoleCardProps = {
@@ -15,21 +16,26 @@ type RoleCardProps = {
 		}[];
 		name: string;
 	};
+	className?: string;
 };
 
-export default function RoleCard({ role }: RoleCardProps) {
+export default function RoleCard({ role, className }: RoleCardProps) {
 	return (
-		<div className="dark:bg-[#121212] p-4 rounded-lg text-black bg-white dark:text-white m-6">
+		<div
+			className={clsx(
+				"dark:bg-[#121212] p-4 rounded-lg text-black bg-white dark:text-white m-6 max-w-4xl",
+				className
+			)}>
 			<div className="flex justify-between">
-				<h2 className="capitalize">{role.name}</h2>
+				<h3 className="capitalize">{role.name}</h3>
 				<Link
 					href={`/roles/${role.name.replaceAll(" ", "-")}`}
 					className="flex flex-row items-center gap-1">
-					View role <LaunchOutlined />
+					View role <ExternalLink />
 				</Link>
 			</div>
 			<div>
-				<h3 className="font-semibold mt-6 mb-2">Required at this level:</h3>
+				<h4 className="font-semibold mt-6 mb-2">Required at this level:</h4>
 				{role["in development"].map(competency => (
 					<div key={competency.name}>
 						<p className="ml-4 font-semibold">{competency.name}:</p>
@@ -38,9 +44,9 @@ export default function RoleCard({ role }: RoleCardProps) {
 				))}
 				{role.developed.length > 0 && (
 					<>
-						<h3 className="font-semibold mt-6 mb-2">
+						<h4 className="font-semibold mt-6 mb-2">
 							Developed at a lower level:
-						</h3>
+						</h4>
 						<>
 							{role.developed.map(competency => (
 								<div key={competency.name}>
