@@ -1,6 +1,5 @@
 "use client";
 
-import { LaunchOutlined } from "@mui/icons-material";
 import clsx from "clsx";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";

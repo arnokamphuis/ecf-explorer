@@ -33,5 +33,7 @@ export const ThemeSwitcher = () => {
 		document.documentElement.classList.remove("dark");
 		setIsDark(false);
 	};
-	return <Button onClick={toggleTheme}>Switch</Button>;
+	return (
+		<Button onClick={toggleTheme}>{isDark ? "Light" : "Dark"} theme</Button>
+	);
 };
