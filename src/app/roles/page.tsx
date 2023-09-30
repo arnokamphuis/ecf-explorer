@@ -56,6 +56,7 @@ export default async function Page() {
 
 	return (
 		<div>
+			<h1>Roles</h1>
 			<div className="flex flex-col flex-wrap dark:bg-[#121212] p-4 rounded-lg gap-4 mt-5 bg-white">
 				<p>Select role(s)</p>
 				<RoleSelect roleNames={roleNames} />

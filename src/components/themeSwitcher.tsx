@@ -9,14 +9,11 @@ export const ThemeSwitcher = () => {
 		typeof window !== "undefined"
 			? window.matchMedia("(prefers-color-scheme: dark)").matches
 			: false;
-	const [isDark, setIsDark] = useLocalStorage<boolean>(
-		"theme",
-		prefersDarkMode
-	);
+	const [isDark, setIsDark] = useLocalStorage<boolean>("theme", true);
 
 	useEffect(() => {
 		setIsDark(prefersDarkMode);
-		if (prefersDarkMode) {
+		if (prefersDarkMode || isDark) {
 			document.documentElement.classList.add("dark");
 		} else {
 			document.documentElement.classList.remove("dark");
