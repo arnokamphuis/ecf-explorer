@@ -39,7 +39,7 @@ export default function RoleCard({ role, className }: RoleCardProps) {
 				{role["in development"].map(competency => (
 					<div key={competency.name}>
 						<p className="ml-4 font-semibold">{competency.name}:</p>
-						<p className="ml-8 text-sx">{competency.activity} </p>
+						{/* <p className="ml-8 text-sx">{competency.activity} </p> */}
 					</div>
 				))}
 				{role.developed.length > 0 && (
@@ -51,7 +51,7 @@ export default function RoleCard({ role, className }: RoleCardProps) {
 							{role.developed.map(competency => (
 								<div key={competency.name}>
 									<p className="ml-4 font-semibold">{competency.name}:</p>
-									<p className="ml-8 text-sx">{competency.activity} </p>
+									{/* <p className="ml-8 text-sx">{competency.activity} </p> */}
 								</div>
 							))}
 						</>
