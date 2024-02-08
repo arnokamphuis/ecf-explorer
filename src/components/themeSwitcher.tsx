@@ -4,7 +4,7 @@ import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { useEffect } from "react";
 import { Button } from "./ui/button";
 
-export const ThemeSwitcher = () => {
+const ThemeSwitcher = () => {
 	const prefersDarkMode =
 		typeof window !== "undefined"
 			? window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -34,6 +34,10 @@ export const ThemeSwitcher = () => {
 		setIsDark(false);
 	};
 	return (
-		<Button onClick={toggleTheme}>{isDark ? "Light" : "Dark"} theme</Button>
+		<Button onClick={toggleTheme} suppressHydrationWarning>
+			{isDark ? "Light" : "Dark"} theme
+		</Button>
 	);
 };
+
+export default ThemeSwitcher;
