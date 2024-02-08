@@ -1,4 +1,3 @@
-import { Deliverable } from "@/types/deliverable";
 import { cache } from "react";
 import { getRoles } from "@/utils/getRoles";
 import { notFound } from "next/navigation";
@@ -38,18 +37,19 @@ export default async function RolePage({
 				<div>
 					<h2>Deliverables</h2>
 					<div className="flex flex-col gap-6 justify-center sm:flex-row">
-						{Object.keys(roleData.deliverables).map(
-							(deliverableType: keyof Deliverable) => (
-								<div key={deliverableType} className="capitalize">
-									<p className="font-semibold">{deliverableType}</p>
+						{Object.entries(roleData.deliverables).map(([key, values]) => {
+							if (!values.length) return null;
+							return (
+								<div key={key} className="capitalize">
+									<h3 className="font-semibold">{key}</h3>
 									<ul className="list-disc ml-4">
-										{roleData.deliverables[deliverableType].map(deliverable => (
+										{values.map(deliverable => (
 											<li key={deliverable}>{deliverable}</li>
 										))}
 									</ul>
 								</div>
-							)
-						)}
+							);
+						})}
 					</div>
 				</div>
 				<div>
