@@ -1,6 +1,8 @@
-import { ThemeSwitcher } from "@/components/themeSwitcher";
+import ThemeSwitcher from "@/components/themeSwitcher";
 import Link from "next/link";
 import "./globals.css";
+import LevelProvider from "@/context/levelProvider";
+import RolesProvider from "@/context/rolesProvider";
 
 type LayoutProps = {
 	children: React.ReactNode;
@@ -32,7 +34,11 @@ export default function Layout({ children }: LayoutProps) {
 						<ThemeSwitcher />
 					</div>
 				</nav>
-				<div className="p-5">{children}</div>
+				<div className="p-5">
+					<LevelProvider>
+						<RolesProvider>{children}</RolesProvider>
+					</LevelProvider>
+				</div>
 			</body>
 		</html>
 	);
