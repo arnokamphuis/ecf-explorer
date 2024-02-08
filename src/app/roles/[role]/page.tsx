@@ -4,6 +4,7 @@ import { getRoles } from "@/utils/getRoles";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
+import { Metadata } from "next";
 
 const getRole = cache(async (role: string) => {
 	const roles = await getRoles();
@@ -76,4 +77,18 @@ export default async function RolePage({
 			</Card>
 		</div>
 	);
+}
+
+export async function generateMetadata({
+	params,
+}: {
+	params: { role: string };
+}): Promise<Metadata> {
+	const role = params.role.replaceAll("-", " ");
+	const roles = await getRoles();
+
+	return {
+		title: role,
+		description: roles[role].summary,
+	};
 }

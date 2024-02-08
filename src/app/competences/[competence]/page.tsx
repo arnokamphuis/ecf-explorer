@@ -1,6 +1,7 @@
 import { getCompetences } from "@/utils/getCompetences";
 import { getHboICompetenceLinks } from "@/utils/getHboICompetenceLinks";
 import { getRoles } from "@/utils/getRoles";
+import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -78,4 +79,18 @@ export default async function Competencepage({
 			</div>
 		</div>
 	);
+}
+
+export async function generateMetadata({
+	params,
+}: {
+	params: { competence: string };
+}): Promise<Metadata> {
+	const competence = params.competence.replaceAll("-", " ");
+	const competences = await getCompetences();
+
+	return {
+		title: competence,
+		description: competences[competence].description,
+	};
 }
