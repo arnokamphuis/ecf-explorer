@@ -1,9 +1,9 @@
-import { Deliverable } from "@/types/deliverable";
 import { cache } from "react";
 import { getRoles } from "@/utils/getRoles";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
+import { Metadata } from "next";
 
 const getRole = cache(async (role: string) => {
 	const roles = await getRoles();
@@ -37,18 +37,19 @@ export default async function RolePage({
 				<div>
 					<h2>Deliverables</h2>
 					<div className="flex flex-col gap-6 justify-center sm:flex-row">
-						{Object.keys(roleData.deliverables).map(
-							(deliverableType: keyof Deliverable) => (
-								<div key={deliverableType} className="capitalize">
-									<p className="font-semibold">{deliverableType}</p>
+						{Object.entries(roleData.deliverables).map(([key, values]) => {
+							if (!values.length) return null;
+							return (
+								<div key={key} className="capitalize">
+									<h3 className="font-semibold">{key}</h3>
 									<ul className="list-disc ml-4">
-										{roleData.deliverables[deliverableType].map(deliverable => (
+										{values.map(deliverable => (
 											<li key={deliverable}>{deliverable}</li>
 										))}
 									</ul>
 								</div>
-							)
-						)}
+							);
+						})}
 					</div>
 				</div>
 				<div>
@@ -76,4 +77,18 @@ export default async function RolePage({
 			</Card>
 		</div>
 	);
+}
+
+export async function generateMetadata({
+	params,
+}: {
+	params: { role: string };
+}): Promise<Metadata> {
+	const role = params.role.replaceAll("-", " ");
+	const roles = await getRoles();
+
+	return {
+		title: role,
+		description: roles[role].summary,
+	};
 }

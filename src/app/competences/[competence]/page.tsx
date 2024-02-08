@@ -1,6 +1,7 @@
 import { getCompetences } from "@/utils/getCompetences";
 import { getHboICompetenceLinks } from "@/utils/getHboICompetenceLinks";
 import { getRoles } from "@/utils/getRoles";
+import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -39,15 +40,6 @@ export default async function Competencepage({
 		getCompetence(formatCompetence),
 		getCompetenceHboI(formatCompetence),
 	]);
-	const roles: typeof hboiLinks = Object.entries(hboiLinks).reduce(
-		(refactoredObject: typeof hboiLinks, [key, values]) => {
-			values.forEach(value => {
-				refactoredObject[value] = [...(refactoredObject[value] ?? []), key];
-			});
-			return refactoredObject;
-		},
-		{}
-	);
 	return (
 		<div className="flex flex-1 items-center justify-center">
 			<div className="flex flex-col gap-4 max-w-xl card">
@@ -77,9 +69,9 @@ export default async function Competencepage({
 				{hboiLinks && Object.keys(hboiLinks).length > 0 && (
 					<div>
 						<h2>Hbo-i </h2>
-						{Object.keys(roles).map(link => (
-							<p key={link}>
-								{link}: {roles[link].join(", ")}
+						{Object.entries(hboiLinks).map(([key, values]) => (
+							<p key={key}>
+								{key}: {values.join(", ")}
 							</p>
 						))}
 					</div>
@@ -87,4 +79,18 @@ export default async function Competencepage({
 			</div>
 		</div>
 	);
+}
+
+export async function generateMetadata({
+	params,
+}: {
+	params: { competence: string };
+}): Promise<Metadata> {
+	const competence = params.competence.replaceAll("-", " ");
+	const competences = await getCompetences();
+
+	return {
+		title: competence,
+		description: competences[competence].description,
+	};
 }
