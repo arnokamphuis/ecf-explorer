@@ -13,6 +13,8 @@ const getRole = cache(async (role: string) => {
 	return roles[role];
 });
 
+//Tabel met alle beroepsvelden en taken tegen elkaar, dan filteren per beroepsgroep
+
 export default async function RolePage({
 	params = { role: "" },
 }: {
