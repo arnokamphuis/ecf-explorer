@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card";
 import { getCompetences } from "@/utils/getCompetences";
 import { getHboICompetenceLinks } from "@/utils/getHboICompetenceLinks";
 import { getRoles } from "@/utils/getRoles";
@@ -34,7 +35,7 @@ export default async function Competencepage({
 }: {
 	params: { competence: string };
 }) {
-	const formatCompetence = competence.replaceAll("-", " ");
+	const formatCompetence = decodeURI(competence);
 	const [competenceRoles, competenceData, hboiLinks] = await Promise.all([
 		getCompetenceRoles(formatCompetence),
 		getCompetence(formatCompetence),
@@ -42,7 +43,7 @@ export default async function Competencepage({
 	]);
 	return (
 		<div className="flex flex-1 items-center justify-center">
-			<div className="flex flex-col gap-4 max-w-xl card">
+			<Card className="flex flex-col gap-4 max-w-xl p-4">
 				<div>
 					<h1>{formatCompetence}</h1>
 					<p className="lead">{competenceData.description}</p>
@@ -61,7 +62,7 @@ export default async function Competencepage({
 						<Link
 							key={role}
 							className="capitalize"
-							href={`/roles/${role.replaceAll(" ", "-")}`}>
+							href={`/roles/${encodeURI(role)}`}>
 							{role}
 						</Link>
 					))}
@@ -76,9 +77,14 @@ export default async function Competencepage({
 						))}
 					</div>
 				)}
-			</div>
+			</Card>
 		</div>
 	);
+}
+
+export async function generateStaticParams() {
+	const competences = await getCompetences();
+	return Object.keys(competences).map(key => decodeURI(key));
 }
 
 export async function generateMetadata({
@@ -86,7 +92,7 @@ export async function generateMetadata({
 }: {
 	params: { competence: string };
 }): Promise<Metadata> {
-	const competence = params.competence.replaceAll("-", " ");
+	const competence = decodeURI(params.competence);
 	const competences = await getCompetences();
 
 	return {

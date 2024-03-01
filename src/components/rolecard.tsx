@@ -15,6 +15,7 @@ type RoleCardProps = {
 			activity: string;
 		}[];
 		name: string;
+		summary: string;
 	};
 	className?: string;
 };
@@ -29,11 +30,12 @@ export default function RoleCard({ role, className }: RoleCardProps) {
 			<div className="flex justify-between">
 				<h3 className="capitalize">{role.name}</h3>
 				<Link
-					href={`/roles/${role.name.replaceAll(" ", "-")}`}
+					href={`/roles/${encodeURI(role.name)}`}
 					className="flex flex-row items-center gap-1">
 					View role <ExternalLink />
 				</Link>
 			</div>
+			<p>{role.summary}</p>
 			<div>
 				<h4 className="font-semibold mt-6 mb-2">Required at this level:</h4>
 				{role["in development"].map(competency => (

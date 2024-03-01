@@ -1,17 +1,19 @@
 "use client";
 
 import RoleCard from "@/components/rolecard";
-import { useContext, useMemo, useState } from "react";
+import { useContext, useMemo } from "react";
 import { RolesContext, RolesContextType } from "@/context/rolesProvider";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs";
 import { Button } from "./ui/button";
 import clsx from "clsx";
+import { LevelContext, LevelContextType } from "@/context/levelProvider";
 
 type CompetenceInfo = { name: string; activity: string };
 type RoleInfo = {
 	developed: CompetenceInfo[];
 	"in development": CompetenceInfo[];
 	name: string;
+	summary: string;
 };
 
 type RoleFilterProps = {
@@ -26,7 +28,7 @@ export default function RoleFilter({
 	allRoles,
 	rolesPerLevel,
 }: RoleFilterProps) {
-	const [level, setLevel] = useState(1);
+	const { level, changeLevel } = useContext(LevelContext) as LevelContextType;
 	const { roles } = useContext(RolesContext) as RolesContextType;
 	const filteredDevRoles = useMemo(
 		() =>
@@ -45,7 +47,7 @@ export default function RoleFilter({
 	return (
 		<Tabs
 			value={`${level}`}
-			onValueChange={value => setLevel(Number(value))}
+			onValueChange={value => changeLevel(Number(value))}
 			className="flex flex-1 items-center flex-col mt-4">
 			<TabsList className="mb-4">
 				{[...new Array(5)].map((_, index) => (
@@ -75,7 +77,7 @@ export default function RoleFilter({
 							className="flex flex-1 justify-center items-center gap-4"
 							key={index}>
 							<p>Chosen role(s) not available at this level</p>
-							<Button onClick={() => setLevel(nextLevel + 1)}>
+							<Button onClick={() => changeLevel(nextLevel + 1)}>
 								Go to level {nextLevel + 1}
 							</Button>
 						</TabsContent>

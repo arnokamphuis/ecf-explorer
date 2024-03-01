@@ -9,6 +9,7 @@ import { LevelRoleDescription } from "@/types/level";
 const getCompleteRoles = cache(async () => {
 	const levels = await getLevels();
 	const competences = await getCompetences();
+	const roles = await getRoles();
 
 	const mapCompetence = (
 		competence: string,
@@ -22,6 +23,7 @@ const getCompleteRoles = cache(async () => {
 
 	const mapRole = (role: LevelRoleDescription, level: string) => ({
 		...role,
+		summary: roles[role.name].summary,
 		developed: role.developed.map(comp => mapCompetence(comp, level, true)),
 		"in development": role["in development"].map(comp =>
 			mapCompetence(comp, level)
@@ -56,6 +58,7 @@ export default async function Page() {
 
 	return (
 		<div>
+			<h1>Roles</h1>
 			<div className="flex flex-col flex-wrap dark:bg-[#121212] p-4 rounded-lg gap-4 mt-5 bg-white">
 				<p>Select role(s)</p>
 				<RoleSelect roleNames={roleNames} />

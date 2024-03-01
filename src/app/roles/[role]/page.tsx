@@ -13,13 +13,15 @@ const getRole = cache(async (role: string) => {
 	return roles[role];
 });
 
+//Tabel met alle beroepsvelden en taken tegen elkaar, dan filteren per beroepsgroep
+
 export default async function RolePage({
 	params = { role: "" },
 }: {
 	params: { role: string };
 }) {
 	const { role } = params;
-	const formatRole = role.replaceAll("-", " ");
+	const formatRole = decodeURI(role);
 	const roleData = await getRole(formatRole);
 	return (
 		<div className="flex justify-center items-center flex-col flex-1">
@@ -66,9 +68,7 @@ export default async function RolePage({
 					<h2>Competences</h2>
 					<div className="flex flex-col">
 						{Object.keys(roleData.competencies).map(comp => (
-							<Link
-								key={comp}
-								href={`/competences/${comp.replaceAll(" ", "-")}`}>
+							<Link key={comp} href={`/competences/${encodeURI(comp)}`}>
 								{comp}
 							</Link>
 						))}
@@ -84,11 +84,16 @@ export async function generateMetadata({
 }: {
 	params: { role: string };
 }): Promise<Metadata> {
-	const role = params.role.replaceAll("-", " ");
+	const role = decodeURI(params.role);
 	const roles = await getRoles();
 
 	return {
 		title: role,
 		description: roles[role].summary,
 	};
+}
+
+export async function generateStaticParams() {
+	const roles = await getRoles();
+	return Object.keys(roles).map(key => decodeURI(key));
 }

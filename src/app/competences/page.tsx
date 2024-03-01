@@ -45,9 +45,7 @@ export default async function Competencespage() {
 						<p className="w-60">{phases[section.title]}</p>
 						<div className="flex flex-col">
 							{section.data.map(comp => (
-								<Link
-									href={`/competences/${comp.replaceAll(" ", "-")}`}
-									key={comp}>
+								<Link href={`/competences/${encodeURI(comp)}`} key={comp}>
 									{comp}
 								</Link>
 							))}
