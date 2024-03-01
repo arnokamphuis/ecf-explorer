@@ -59,9 +59,10 @@ export default function RoleFilter({
 			{[...new Array(5)].map((_, index) => {
 				if (
 					filteredDevRoles[index].length === 0 &&
-					filteredInDevRoles[index].length === 0 &&
-					roles.length > 0
+					filteredInDevRoles[index].length === 0
 				) {
+					if (roles.length === 0) return null;
+
 					const nextLevel = rolesPerLevel.findIndex(
 						lvl => roles.filter(role => lvl.includes(role)).length > 0
 					);
