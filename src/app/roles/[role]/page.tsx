@@ -19,7 +19,7 @@ export default async function RolePage({
 	params: { role: string };
 }) {
 	const { role } = params;
-	const formatRole = role.replaceAll("-", " ");
+	const formatRole = decodeURI(role);
 	const roleData = await getRole(formatRole);
 	return (
 		<div className="flex justify-center items-center flex-col flex-1">
@@ -65,9 +65,7 @@ export default async function RolePage({
 					<h2>Competences</h2>
 					<div className="flex flex-col">
 						{Object.keys(roleData.competencies).map(comp => (
-							<Link
-								key={comp}
-								href={`/competences/${comp.replaceAll(" ", "-")}`}>
+							<Link key={comp} href={`/competences/${encodeURI(comp)}`}>
 								{comp}
 							</Link>
 						))}
@@ -76,4 +74,9 @@ export default async function RolePage({
 			</Card>
 		</div>
 	);
+}
+
+export async function generateStaticParams() {
+	const roles = await getRoles();
+	return Object.keys(roles).map(key => decodeURI(key));
 }

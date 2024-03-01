@@ -13,6 +13,7 @@ type RoleInfo = {
 	developed: CompetenceInfo[];
 	"in development": CompetenceInfo[];
 	name: string;
+	summary: string;
 };
 
 type RoleFilterProps = {

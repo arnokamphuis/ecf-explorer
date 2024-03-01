@@ -33,7 +33,7 @@ export default async function Competencepage({
 }: {
 	params: { competence: string };
 }) {
-	const formatCompetence = competence.replaceAll("-", " ");
+	const formatCompetence = decodeURI(competence);
 	const [competenceRoles, competenceData, hboiLinks] = await Promise.all([
 		getCompetenceRoles(formatCompetence),
 		getCompetence(formatCompetence),
@@ -69,7 +69,7 @@ export default async function Competencepage({
 						<Link
 							key={role}
 							className="capitalize"
-							href={`/roles/${role.replaceAll(" ", "-")}`}>
+							href={`/roles/${encodeURI(role)}`}>
 							{role}
 						</Link>
 					))}
@@ -87,4 +87,9 @@ export default async function Competencepage({
 			</div>
 		</div>
 	);
+}
+
+export async function generateStaticParams() {
+	const competences = await getCompetences();
+	return Object.keys(competences).map(key => decodeURI(key));
 }
